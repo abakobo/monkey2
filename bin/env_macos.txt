@@ -12,17 +12,17 @@ MX2_APP_DIR_DYLIB=
 MX2_APP_DIR_FRAMEWORK=../Frameworks
 
 'LD options
-MX2_LD_OPTS_MACOS=-mmacosx-version-min=10.9 -Wl,-rpath,@executable_path -Wl,-rpath,@executable_path/../Frameworks
+MX2_LD_OPTS_MACOS=-mmacosx-version-min=10.9 -Wl,-rpath,@executable_path -Wl,-rpath,@executable_path/../Frameworks -Wl,-dead_strip
 MX2_LD_OPTS_MACOS_DEBUG=
 MX2_LD_OPTS_MACOS_RELEASE=-O3
 
 'C compiler options
-MX2_CC_OPTS_MACOS=-std=gnu99 -mmacosx-version-min=10.9 -Wno-deprecated-declarations -Wno-tautological-pointer-compare -Wno-undefined-bool-conversion -Wno-int-to-void-pointer-cast -Wno-inconsistent-missing-override -Wno-logical-op-parentheses -Wno-parentheses-equality
+MX2_CC_OPTS_MACOS=-std=gnu99 -mmacosx-version-min=10.9 -Wno-deprecated-declarations -Wno-tautological-pointer-compare -Wno-undefined-bool-conversion -Wno-int-to-void-pointer-cast -Wno-inconsistent-missing-override -Wno-logical-op-parentheses -Wno-parentheses-equality -ffunction-sections -fdata-sections
 MX2_CC_OPTS_MACOS_DEBUG=
 MX2_CC_OPTS_MACOS_RELEASE=-O3 -DNDEBUG
 
 'C++ compiler options
-MX2_CPP_OPTS_MACOS=-std=c++14 -mmacosx-version-min=10.9 -Wno-deprecated-declarations -Wno-tautological-pointer-compare -Wno-undefined-bool-conversion -Wno-int-to-void-pointer-cast -Wno-inconsistent-missing-override -Wno-logical-op-parentheses -Wno-parentheses-equality
+MX2_CPP_OPTS_MACOS=-std=c++14 -mmacosx-version-min=10.9 -Wno-deprecated-declarations -Wno-tautological-pointer-compare -Wno-undefined-bool-conversion -Wno-int-to-void-pointer-cast -Wno-inconsistent-missing-override -Wno-logical-op-parentheses -Wno-parentheses-equality -ffunction-sections -fdata-sections
 MX2_CPP_OPTS_MACOS_DEBUG=
 MX2_CPP_OPTS_MACOS_RELEASE=-O3 -DNDEBUG
 
@@ -51,7 +51,7 @@ MX2_LD_OPTS_EMSCRIPTEN=-s FETCH=1 -s USE_SDL=2 -s TOTAL_MEMORY=268435456 -s DISA
 MX2_LD_OPTS_EMSCRIPTEN_DEBUG=-O2 -s ASSERTIONS=2
 MX2_LD_OPTS_EMSCRIPTEN_RELEASE=-O3
 
-MX2_LD_OPTS_EMSCRIPTEN_WASM=-s BINARYEN=1 
+MX2_LD_OPTS_EMSCRIPTEN_WASM=-s BINARYEN=1
 
 'C compiler options
 MX2_CC_OPTS_EMSCRIPTEN=-std=gnu99 -s USE_SDL=2 -s TOTAL_MEMORY=268435456 -s DISABLE_EXCEPTION_CATCHING=1 -s ERROR_ON_UNDEFINED_SYMBOLS=0
@@ -106,7 +106,7 @@ MX2_IOS_DEPLOYMENT_TARGET=8.0
 'LD options
 MX2_LD_OPTS_IOS=${MX2_IOS_ARCHS} -isysroot ${MX2_IOS_SDK}
 MX2_LD_OPTS_IOS_DEBUG=
-MX2_LD_OPTS_IOS_RELEASE=-O3 
+MX2_LD_OPTS_IOS_RELEASE=-O3
 
 'C compiler options
 '
