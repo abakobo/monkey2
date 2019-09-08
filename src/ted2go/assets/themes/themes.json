@@ -23,6 +23,10 @@
 		"path": "theme-hollow",
 		"dark": true
 	},
+	"Washed": {
+		"path": "theme-washed",
+		"dark": true
+	},
 	"Prime - Red": {
 		"path": "theme-prime-red",
 		"dark": true
@@ -37,6 +41,10 @@
 	},
 	"Warm": {
 		"path": "theme-warm",
+		"dark": true
+	},
+	"Dark Nights": {
+		"path": "theme-darknights",
 		"dark": true
 	}
 }

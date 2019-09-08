@@ -1,0 +1,34 @@
+//Started script log at 02/27/18 22:03:43
+
+getBody(1).select();
+getFixture(1).select();
+getFixture(1).deselect();
+getFixture(4).select();
+getFixture(4).setName("fixture1");
+getFixture(4).deselect();
+getFixture(3).select();
+getFixture(3).setName("fixture2");
+getFixture(3).deselect();
+getFixture(2).select();
+getFixture(2).setName("fixture4");
+getFixture(2).deselect();
+getFixture(3).select();
+getFixture(3).deselect();
+getFixture(2).select();
+getFixture(2).setName("fixture3");
+getFixture(2).deselect();
+getFixture(1).select();
+getBody(1).deselect();
+getBody(4).select();
+getBody(1).select();
+addJoint(1, '{"type":"weld","bodyA":4,"bodyB":1,"anchorA":{"x":-1.11111,"y":-0.0793652},"anchorB":{"x":-0.0634923,"y":-0.0793651}}');
+getBody(1).deselect();
+getBody(4).deselect();
+getBody(4).select();
+getBody(3).select();
+addJoint(2, '{"type":"weld","bodyA":4,"bodyB":3,"anchorA":{"x":-1.11111,"y":-0.0793652},"anchorB":{"x":-2.07937,"y":-0.063492}}');
+getBody(3).deselect();
+getBody(4).deselect();
+getBody(3).select();
+getBody(2).select();
+addJoint(3, '{"type":"weld","bodyA":3,"bodyB":2,"anchorA":{"x":-2.07937,"y":-0.063492},"anchorB":{"x":-3.12698,"y":-0.0476192}}');

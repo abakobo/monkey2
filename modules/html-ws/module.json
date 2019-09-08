@@ -1,0 +1,8 @@
+{
+	"module":"html-ws",
+	"about":"Monkey2 wrapper for native HTML Web Sockets.",
+	"author":"Abrahim  Noll",
+	"version":"0.0.1",
+	"support":"http://monkeycoder.co.nz",
+	"depends":[]
+}

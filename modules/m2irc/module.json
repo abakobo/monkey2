@@ -1,0 +1,8 @@
+{
+	"module":"m2irc",
+	"about":"IRC support",
+	"author":"Hezkore",
+	"version":"1.0.0",
+	"support":"http://hezkore.com",
+	"depends":[]
+}

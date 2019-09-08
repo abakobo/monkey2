@@ -1,0 +1,220 @@
+
+{
+	"allowSleep" : true,
+	"autoClearForces" : true,
+	"body" : 
+	[
+		
+		{
+			"angle" : 0,
+			"angularVelocity" : 0,
+			"awake" : true,
+			"fixture" : 
+			[
+				
+				{
+					"density" : 1,
+					"filter-categoryBits" : 56,
+					"filter-maskBits" : 65479,
+					"friction" : 0.2000000029802322,
+					"name" : "fixture2",
+					"polygon" : 
+					{
+						"vertices" : 
+						{
+							"x" : 
+							[
+								0.50,
+								0.1545079946517944,
+								-0.4045090079307556,
+								-0.4045079946517944,
+								0.1545089930295944
+							],
+							"y" : 
+							[
+								0.0,
+								0.4755280017852783,
+								0.2938930094242096,
+								-0.2938930094242096,
+								-0.4755280017852783
+							]
+						}
+					}
+				}
+			],
+			"linearVelocity" : 
+			{
+				"x" : 0,
+				"y" : 0
+			},
+			"massData-I" : 0.05718764662742615,
+			"massData-center" : 
+			{
+				"x" : -1.122968953382042e-007,
+				"y" : 4.154798816102812e-008
+			},
+			"massData-mass" : 0.5944103002548218,
+			"name" : "body2",
+			"position" : 
+			{
+				"x" : 0.4953116178512573,
+				"y" : 1.584062695503235
+			},
+			"type" : 2
+		},
+		
+		{
+			"angle" : 0,
+			"angularVelocity" : 0,
+			"awake" : true,
+			"customProperties" : 
+			[
+				
+				{
+					"int" : 7,
+					"name" : "theInt"
+				},
+				
+				{
+					"name" : "theVect",
+					"vec2" : 
+					{
+						"x" : 5.199999809265137,
+						"y" : 63.0
+					}
+				}
+			],
+			"fixture" : 
+			[
+				
+				{
+					"circle" : 
+					{
+						"center" : 
+						{
+							"x" : 0,
+							"y" : 0
+						},
+						"radius" : 0.50
+					},
+					"density" : 1,
+					"filter-categoryBits" : 4095,
+					"filter-maskBits" : 63743,
+					"friction" : 0.2000000029802322,
+					"name" : "fixture0"
+				}
+			],
+			"linearVelocity" : 
+			{
+				"x" : 0,
+				"y" : 0
+			},
+			"name" : "body0",
+			"position" : 
+			{
+				"x" : 0,
+				"y" : 0
+			},
+			"type" : 0
+		},
+		
+		{
+			"angle" : 0,
+			"angularVelocity" : 0,
+			"awake" : true,
+			"customProperties" : 
+			[
+				
+				{
+					"name" : "theVect",
+					"vec2" : 
+					{
+						"x" : 0,
+						"y" : 0
+					}
+				}
+			],
+			"fixture" : 
+			[
+				
+				{
+					"density" : 1,
+					"filter-categoryBits" : 63,
+					"friction" : 0.2000000029802322,
+					"name" : "fixture1",
+					"polygon" : 
+					{
+						"vertices" : 
+						{
+							"x" : [ 0.50, 0.50, -0.50, -0.50 ],
+							"y" : [ -0.50, 0.50, 0.50, -0.50 ]
+						}
+					}
+				}
+			],
+			"linearVelocity" : 
+			{
+				"x" : 0,
+				"y" : 0
+			},
+			"massData-I" : 0.1666666716337204,
+			"massData-mass" : 1,
+			"name" : "body1",
+			"position" : 
+			{
+				"x" : -1.698412895202637,
+				"y" : 1.793650865554810
+			},
+			"type" : 2
+		}
+	],
+	"collisionbitplanes" : 
+	{
+		"names" : 
+		[
+			"one",
+			"rwo",
+			"reee",
+			"bitplane4",
+			"bitplane5",
+			"bitplane6",
+			"bitplane7",
+			"bitplane8",
+			"bitplane9",
+			"bitplane10",
+			"bitplane11",
+			"bitplane12",
+			"bitplane13",
+			"bitplane14",
+			"bitplane15",
+			"bitplane16",
+			"bitplane17",
+			"bitplane18",
+			"bitplane19",
+			"bitplane20",
+			"bitplane21",
+			"bitplane22",
+			"bitplane23",
+			"bitplane24",
+			"bitplane25",
+			"bitplane26",
+			"bitplane27",
+			"bitplane28",
+			"bitplane29",
+			"bitplane30",
+			"bitplane31",
+			"bitplane32"
+		]
+	},
+	"continuousPhysics" : true,
+	"gravity" : 
+	{
+		"x" : 0,
+		"y" : -10.0
+	},
+	"positionIterations" : 3,
+	"stepsPerSecond" : 60.0,
+	"subStepping" : false,
+	"velocityIterations" : 8,
+	"warmStarting" : true
+}

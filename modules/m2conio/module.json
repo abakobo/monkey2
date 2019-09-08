@@ -1,0 +1,8 @@
+{
+	"module":"m2conio",
+	"about":"Console I/O extension",
+	"author":"Hezkore",
+	"version":"1.0.0",
+	"support":"http://hezkore.com",
+	"depends":["libc"]
+}

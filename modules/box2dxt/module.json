@@ -1,0 +1,8 @@
+{
+	"module":"box2dxt",
+	"about":"box2d R.U.B.E. import/export + b2Manager Class",
+	"author":"iforce2d, abakobo",
+	"version":"0.0.1",
+	"support":"https://github.com/abakobo/box2dxt-monkey2-module",
+	"depends":["std","mojo","box2d"]
+}

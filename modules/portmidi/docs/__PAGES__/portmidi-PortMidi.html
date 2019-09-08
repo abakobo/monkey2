@@ -1,0 +1,156 @@
+<!doctype html>
+
+<html>
+
+<head>
+
+<link rel="stylesheet" href="../../../../docs/style.css">
+
+<script type='text/javascript'>
+
+function openDocsPage( page ){
+
+	var url='../../../'+page.replace( ':','/docs/__PAGES__/' ).replace( /\./g,'-' )+'.html';
+
+	document.location.href=url;
+	
+	return false;
+}
+
+</script>
+
+</head>
+
+<body class="docs_body">
+
+<div class="docs_content">
+
+<!-- CONTENT -->
+
+<i>portmidi:<a href="javascript:void('portmidi:portmidi')" onclick="openDocsPage('portmidi:portmidi')">portmidi</a>.PortMidi</i>
+<h5>
+Class PortMidi
+</h5>
+Desktop MIDI courtesy PortMidi library.
+<table>
+<tr>
+<th style="text-align:left">Public Fields </th>
+<th style="text-align:left"></th>
+</tr>
+<tr>
+<td style="text-align:left"><a href="javascript:void('portmidi:portmidi-PortMidi-deviceCount')" onclick="openDocsPage('portmidi:portmidi-PortMidi-deviceCount')">deviceCount</a> </td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="javascript:void('portmidi:portmidi-PortMidi-driver')" onclick="openDocsPage('portmidi:portmidi-PortMidi-driver')">driver</a> </td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="javascript:void('portmidi:portmidi-PortMidi-inputDevices')" onclick="openDocsPage('portmidi:portmidi-PortMidi-inputDevices')">inputDevices</a> </td>
+<td style="text-align:left">A stack of available MIDI inputs. </td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="javascript:void('portmidi:portmidi-PortMidi-openInputs')" onclick="openDocsPage('portmidi:portmidi-PortMidi-openInputs')">openInputs</a> </td>
+<td style="text-align:left">A map of open MIDI inputs </td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="javascript:void('portmidi:portmidi-PortMidi-openOutputs')" onclick="openDocsPage('portmidi:portmidi-PortMidi-openOutputs')">openOutputs</a> </td>
+<td style="text-align:left">A map of open MIDI outputs </td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="javascript:void('portmidi:portmidi-PortMidi-outputDevices')" onclick="openDocsPage('portmidi:portmidi-PortMidi-outputDevices')">outputDevices</a> </td>
+<td style="text-align:left">A stack of available MIDI outputs. </td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="javascript:void('portmidi:portmidi-PortMidi-sysexBuffer')" onclick="openDocsPage('portmidi:portmidi-PortMidi-sysexBuffer')">sysexBuffer</a> </td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="javascript:void('portmidi:portmidi-PortMidi-version')" onclick="openDocsPage('portmidi:portmidi-PortMidi-version')">version</a> </td>
+<td style="text-align:left"></td>
+</tr>
+</table>
+<table>
+<tr>
+<th style="text-align:left">Public Constructors </th>
+<th style="text-align:left"></th>
+</tr>
+<tr>
+<td style="text-align:left"><a href="javascript:void('portmidi:portmidi-PortMidi-new')" onclick="openDocsPage('portmidi:portmidi-PortMidi-new')">New</a> </td>
+<td style="text-align:left">scan midi bus </td>
+</tr>
+</table>
+<table>
+<tr>
+<th style="text-align:left">Public Methods </th>
+<th style="text-align:left"></th>
+</tr>
+<tr>
+<td style="text-align:left"><a href="javascript:void('portmidi:portmidi-PortMidi-CloseAll')" onclick="openDocsPage('portmidi:portmidi-PortMidi-CloseAll')">CloseAll</a> </td>
+<td style="text-align:left">close all open MIDI channels </td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="javascript:void('portmidi:portmidi-PortMidi-CloseInput')" onclick="openDocsPage('portmidi:portmidi-PortMidi-CloseInput')">CloseInput</a> </td>
+<td style="text-align:left">Close specified MIDI input channel </td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="javascript:void('portmidi:portmidi-PortMidi-CloseOutput')" onclick="openDocsPage('portmidi:portmidi-PortMidi-CloseOutput')">CloseOutput</a> </td>
+<td style="text-align:left">Close specified MIDI output channel </td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="javascript:void('portmidi:portmidi-PortMidi-EventContent')" onclick="openDocsPage('portmidi:portmidi-PortMidi-EventContent')">EventContent</a> </td>
+<td style="text-align:left">Return contents of Sysex message </td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="javascript:void('portmidi:portmidi-PortMidi-EventData')" onclick="openDocsPage('portmidi:portmidi-PortMidi-EventData')">EventData</a> </td>
+<td style="text-align:left">Return packed 4 bytes of current MIDI event </td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="javascript:void('portmidi:portmidi-PortMidi-EventDataBytes')" onclick="openDocsPage('portmidi:portmidi-PortMidi-EventDataBytes')">EventDataBytes</a> </td>
+<td style="text-align:left">Return separate 4 bytes of current MIDI event </td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="javascript:void('portmidi:portmidi-PortMidi-EventTime')" onclick="openDocsPage('portmidi:portmidi-PortMidi-EventTime')">EventTime</a> </td>
+<td style="text-align:left">Return timestamp of event in seconds </td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="javascript:void('portmidi:portmidi-PortMidi-HasEvent')" onclick="openDocsPage('portmidi:portmidi-PortMidi-HasEvent')">HasEvent</a> </td>
+<td style="text-align:left">Returns number of MIDI events in queue </td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="javascript:void('portmidi:portmidi-PortMidi-InputName')" onclick="openDocsPage('portmidi:portmidi-PortMidi-InputName')">InputName</a> </td>
+<td style="text-align:left">Name of input channel </td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="javascript:void('portmidi:portmidi-PortMidi-OpenInput')" onclick="openDocsPage('portmidi:portmidi-PortMidi-OpenInput')">OpenInput</a> </td>
+<td style="text-align:left">Open specified MIDI input channel </td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="javascript:void('portmidi:portmidi-PortMidi-OpenOutput')" onclick="openDocsPage('portmidi:portmidi-PortMidi-OpenOutput')">OpenOutput</a> </td>
+<td style="text-align:left">Open specified MIDI output channel </td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="javascript:void('portmidi:portmidi-PortMidi-OutputName')" onclick="openDocsPage('portmidi:portmidi-PortMidi-OutputName')">OutputName</a> </td>
+<td style="text-align:left">Name of output channel </td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="javascript:void('portmidi:portmidi-PortMidi-SendMessage')" onclick="openDocsPage('portmidi:portmidi-PortMidi-SendMessage')">SendMessage</a> </td>
+<td style="text-align:left">Send MIDI data to specified MIDI output channel </td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="javascript:void('portmidi:portmidi-PortMidi-SendMessages')" onclick="openDocsPage('portmidi:portmidi-PortMidi-SendMessages')">SendMessages</a> </td>
+<td style="text-align:left">Send raw MIDI Sysex data (MSB ignored) </td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="javascript:void('portmidi:portmidi-PortMidi-Sleep')" onclick="openDocsPage('portmidi:portmidi-PortMidi-Sleep')">Sleep</a> </td>
+<td style="text-align:left">High resolution PortMidi sleep command. </td>
+</tr>
+</table>
+
+<!-- END -->
+
+</div>
+
+</body>
+
+</html>
