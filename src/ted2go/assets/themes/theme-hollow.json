@@ -43,6 +43,7 @@
 		"textview-color5": "#6F665E",	//comment
 		"textview-color6": "#FDBD28",	//preproc
 		"textview-color7": "#8EC07C",
+		"textview-color8": "#FA3E28",	//core types like Int, Bool
 		
 		"windowClearColor":"darkest",
 		"menu-shortcut":"text-background",
@@ -208,8 +209,8 @@
 		"ToolButton":{
 			"extends":"Button",
 			"backgroundColor":"dark",
-			"padding":[ 2,0 ],
-			"margin":[ 2,0 ],
+			"padding":[ 4,4 ],
+			"margin":[ 2,2 ],
 
 			"states":{
 				"hover":{

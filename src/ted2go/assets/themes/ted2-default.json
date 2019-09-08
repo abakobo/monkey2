@@ -14,10 +14,12 @@
 		"codemap-selection": "#48000000",
 		"params-hint-common": "textview-color1",
 		"params-hint-selected": "textview-color4",
+		"completion-list-text": "text-default",
 		"completion-list-selected": "content",
 		"completion-list-marked-bg": "#0fff",
 		"completion-list-marked-text": "textview-color4",
-		"treeview-selected-row": "#1fff"
+		"treeview-selected-row": "#1fff",
+		"textview-color8": "textview-color2" //core types like Int, Bool
 	},
 
 	"fonts":{
@@ -43,7 +45,9 @@
 		
 		"HelpTextField":{
 			"extends":"TextField",
-			"skinColor":"panel"
+			"skinColor":"panel",
+			"border":[ 1 ],
+			"borderColor":"#2000"
 		},
 		"HelpPageAddress":{
 			"extends":"Label",
@@ -84,8 +88,8 @@
 
 		"ToolButton":{
 			"extends":"Button",
-			"padding":[ 2,0 ],
-			"margin":[ 3,0 ]
+			"padding":[ 4,4 ],
+			"margin":[ 2,2 ]
 		},
 
 		"ColoredToolButton":{

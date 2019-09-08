@@ -9,8 +9,8 @@
 			"iconColor":"#FFF",
 			"skinColor":"panel",
 			"extends":"Button",
-			"padding":[2,0],
-			"margin":[3,0],
+			"padding":[ 4,4 ],
+			"margin":[ 2,2 ],
 
 			"states":{
 				"hover":{
@@ -262,7 +262,8 @@
 		"textview-color4": "#FFB254",	//numbers
 		"textview-color5": "#6E7480",	//comment
 		"textview-color6": "#E06C72",	//preproc
-		"textview-color7": "#C358F5"	//default
+		"textview-color7": "#C358F5",	//default
+		"textview-color8": "textview-color2" //core types like Int, Bool
 	},
 
 	"fonts":{
