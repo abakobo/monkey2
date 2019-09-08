@@ -1,0 +1,2110 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"Blend",
+				"Blendmode"
+			],
+			[
+				"colio",
+				"collisionhandler"
+			],
+			[
+				"colli",
+				"collisionhandler"
+			],
+			[
+				"Min",
+				"MinNodeHeight"
+			],
+			[
+				"tlQuad",
+				"tlQuadTreeNode"
+			],
+			[
+				"layer",
+				"layerconfigs"
+			],
+			[
+				"Max",
+				"MaxPerNode"
+			],
+			[
+				"Local",
+				"LocalRotation"
+			],
+			[
+				"false",
+				"False"
+			],
+			[
+				"Clear",
+				"ClearInUse"
+			],
+			[
+				"String",
+				"StringMap"
+			],
+			[
+				"Angle",
+				"AngleOffset"
+			],
+			[
+				"spee",
+				"speed_vec"
+			],
+			[
+				"import",
+				"Import"
+			],
+			[
+				"x",
+				"x"
+			],
+			[
+				"time",
+				"timelinefx"
+			],
+			[
+				"local",
+				"local_rotation"
+			],
+			[
+				"cell",
+				"cellHeight"
+			],
+			[
+				"object",
+				"objectsfound"
+			],
+			[
+				"min_",
+				"min_nodeheight"
+			],
+			[
+				"parent",
+				"parenttree"
+			],
+			[
+				"number",
+				"numberofobjects"
+			],
+			[
+				"current",
+				"Current"
+			],
+			[
+				"empty",
+				"Empty"
+			],
+			[
+				"step",
+				"StepX"
+			],
+			[
+				"box",
+				"boxoffset"
+			],
+			[
+				"tlVector",
+				"tlVector2"
+			],
+			[
+				"distan",
+				"distance_y"
+			],
+			[
+				"will",
+				"willintersect"
+			],
+			[
+				"border",
+				"border-radius"
+			],
+			[
+				"backgrou",
+				"background-color"
+			],
+			[
+				"text",
+				"textarea\tTag"
+			],
+			[
+				"marg",
+				"margin-top"
+			],
+			[
+				"showanim",
+				"showAnimationFrom"
+			],
+			[
+				"window",
+				"windowWidth"
+			],
+			[
+				"outer",
+				"outerWidth"
+			],
+			[
+				"check",
+				"checkAnimationFrom"
+			],
+			[
+				"onUpdate",
+				"onUpdateParams"
+			],
+			[
+				"switch",
+				"switchContentAnimationFrom"
+			],
+			[
+				"icon",
+				"iconAnimationTo"
+			],
+			[
+				"anim",
+				"animations"
+			],
+			[
+				"an",
+				"animationDuration"
+			],
+			[
+				"ripp",
+				"rippleEffect"
+			],
+			[
+				"margin",
+				"margin-top: "
+			],
+			[
+				"tabs",
+				"tabsWidth"
+			],
+			[
+				"curre",
+				"currentHeight"
+			],
+			[
+				"curren",
+				"currentHeight"
+			],
+			[
+				"anima",
+				"animationDuration"
+			],
+			[
+				"pas",
+				"paused"
+			],
+			[
+				"onC",
+				"onComplete"
+			],
+			[
+				"switchConten",
+				"switchContentAnimationFrom"
+			],
+			[
+				"max-",
+				"max-width: "
+			],
+			[
+				"scr",
+				"scrollLeft"
+			],
+			[
+				"tab",
+				"tabOffset"
+			],
+			[
+				"list-styl",
+				"list-style-type: "
+			],
+			[
+				"gallery",
+				"galleryIndex"
+			],
+			[
+				"galler",
+				"galleryCaptions"
+			],
+			[
+				"flex",
+				"flex-direction: "
+			],
+			[
+				"show",
+				"showCaption"
+			],
+			[
+				"load",
+				"loading"
+			],
+			[
+				"lo",
+				"loadingElem"
+			],
+			[
+				"revel",
+				"revealAnimationFrom"
+			],
+			[
+				"curr",
+				"currentImageIndex"
+			],
+			[
+				"ani",
+				"animations"
+			],
+			[
+				"hide",
+				"hideAndShowNavigationButtons"
+			],
+			[
+				"clos",
+				"closestHeight"
+			],
+			[
+				"closest",
+				"closestWidth"
+			],
+			[
+				"min",
+				"minimumSizeForThumbs"
+			],
+			[
+				"hi",
+				"hideAndShowNavigationButtons"
+			],
+			[
+				"gal",
+				"galleryIndex"
+			],
+			[
+				"nav",
+				"navLeft"
+			],
+			[
+				"selec",
+				"selectThumb"
+			],
+			[
+				"flip",
+				"flipAnimationFrom"
+			],
+			[
+				"thu",
+				"thumbSize"
+			],
+			[
+				"get",
+				"getClosestSize"
+			],
+			[
+				"close",
+				"closestWidth"
+			],
+			[
+				"cont",
+				"container"
+			],
+			[
+				"animation",
+				"animationDuration"
+			],
+			[
+				"border-bottom",
+				"border-bottom-style: "
+			],
+			[
+				"broder",
+				"border-color: "
+			],
+			[
+				"align",
+				"align-items: "
+			],
+			[
+				"align-",
+				"align-items: "
+			],
+			[
+				"transform",
+				"transform-origin: "
+			],
+			[
+				"trans",
+				"transform-origin: "
+			],
+			[
+				"appe",
+				"appearTo"
+			],
+			[
+				"app",
+				"appearFrom"
+			],
+			[
+				"border-left",
+				"border-left-width: "
+			],
+			[
+				"tran",
+				"transition: "
+			],
+			[
+				"tra",
+				"transition: "
+			],
+			[
+				"clien",
+				"clientY"
+			],
+			[
+				"background",
+				"background-color: "
+			],
+			[
+				"backgroun",
+				"background-color: "
+			],
+			[
+				"tou",
+				"touchAnimationDuration"
+			],
+			[
+				"tall",
+				"tallestHeight"
+			],
+			[
+				"h",
+				"height"
+			],
+			[
+				"talles",
+				"tallestHeight"
+			],
+			[
+				"tallest",
+				"tallestHeight"
+			],
+			[
+				"column",
+				"columns"
+			],
+			[
+				"for",
+				"for\tfor (…) {…}"
+			],
+			[
+				"col",
+				"columnHeights"
+			],
+			[
+				"item",
+				"itemCount"
+			],
+			[
+				"margin-",
+				"margin-right: "
+			],
+			[
+				"touch",
+				"touchAnimationTo"
+			],
+			[
+				"ana",
+				"animations"
+			],
+			[
+				"butt",
+				"buttonIconClass"
+			],
+			[
+				"defau",
+				"defaultStateOpen"
+			],
+			[
+				"list-sty",
+				"list-style-type: "
+			],
+			[
+				"padding",
+				"padding-bottom: "
+			],
+			[
+				"backgorund",
+				"background-color: "
+			],
+			[
+				"update",
+				"updateOnScroll"
+			],
+			[
+				"off",
+				"offset"
+			],
+			[
+				"reset",
+				"resetAnimation"
+			],
+			[
+				"menu",
+				"menuPanelAnimationTo"
+			],
+			[
+				"obs",
+				"obscuredCount"
+			],
+			[
+				"ob",
+				"obscuredCount"
+			],
+			[
+				"subMenu",
+				"subMenuIconAnimationFrom"
+			],
+			[
+				"sub",
+				"subMenuIcon"
+			],
+			[
+				"tet-",
+				"text-align: "
+			],
+			[
+				"subMore",
+				"subMoreAnimationFrom"
+			],
+			[
+				"more",
+				"moreMenuAnimationFrom"
+			],
+			[
+				"tr",
+				"transform: "
+			],
+			[
+				"backgorun",
+				"background-color: "
+			],
+			[
+				"scroll",
+				"scrollHeight"
+			],
+			[
+				"toggl",
+				"toggleOverlay"
+			],
+			[
+				"in",
+				"initalTop"
+			],
+			[
+				"res",
+				"resetMenus"
+			],
+			[
+				"back",
+				"background-color: "
+			],
+			[
+				"inline",
+				"inline-block"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "spawncomponents.monkey2",
+			"settings":
+			{
+				"buffer_size": 17065,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "gameobject.monkey2",
+			"settings":
+			{
+				"buffer_size": 46742,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "vector.monkey2",
+			"settings":
+			{
+				"buffer_size": 6516,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/E/Monkey/MonkeyTuts/.gitignore",
+			"settings":
+			{
+				"buffer_size": 13,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/E/FreelanceWork/Dropbox/Freelance/ImageLogo/focus_css_backup.css",
+			"settings":
+			{
+				"buffer_size": 7274,
+				"encoding": "UTF-8",
+				"line_ending": "Windows",
+				"name": "@import url('https://fonts.googleapis.com/css?fami"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "fetc",
+		"selected_items":
+		[
+			[
+				"fetc",
+				"Fetch: Manage"
+			],
+			[
+				"package ",
+				"Package Control: List Packages"
+			],
+			[
+				"package instal",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Package Control: List Packages"
+			],
+			[
+				"fet",
+				"Fetch: Package"
+			],
+			[
+				"package",
+				"Package Control: List Packages"
+			],
+			[
+				"html",
+				"HTMLBeautify"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"indent",
+				"Auto indent"
+			],
+			[
+				"",
+				"About"
+			],
+			[
+				"tasks",
+				"Tasks: New document"
+			],
+			[
+				"task",
+				"Tasks: New document"
+			],
+			[
+				"packa",
+				"Package Control: Remove Package"
+			],
+			[
+				"package remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"plain ta",
+				"Package Control: Install Package"
+			],
+			[
+				"note",
+				"Notes: List…"
+			],
+			[
+				"notes",
+				"Notes: New…"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"indent ",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"inden",
+				"Auto indent"
+			],
+			[
+				"insall",
+				"Package Control: Install Package"
+			],
+			[
+				"doc",
+				"DocBlockr: Decorate line comment"
+			],
+			[
+				"copy",
+				"File: Copy Path as URI"
+			],
+			[
+				"prefix",
+				"Autoprefix CSS"
+			],
+			[
+				"xiki",
+				"Preferences: SublimeXiki Settings – User"
+			],
+			[
+				"jquery on",
+				"Snippet: jQuery on handler"
+			],
+			[
+				"jquery ",
+				"Snippet: jQuery ready function"
+			],
+			[
+				"wordpre",
+				"WordPress Developer: Search Selection"
+			],
+			[
+				"instal\t",
+				"Package Control: Install Package"
+			],
+			[
+				"sass",
+				"Set Syntax: Sass"
+			],
+			[
+				"beaut",
+				"Javascript Beautify"
+			],
+			[
+				"beau",
+				"Javascript Beautify"
+			],
+			[
+				"git ",
+				"Git: Commit"
+			],
+			[
+				"git add",
+				"Git: Add..."
+			],
+			[
+				"git comm",
+				"Git: Commit"
+			],
+			[
+				"git st",
+				"Git: Status"
+			],
+			[
+				"git",
+				"Git: Commit"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"copy as",
+				"File: Copy as Tag script"
+			],
+			[
+				"tit",
+				"Convert Case: Title Case"
+			],
+			[
+				"open",
+				"File: Open In Browser - Testing Server"
+			],
+			[
+				"fetch",
+				"Fetch: Package"
+			],
+			[
+				"intsl",
+				"Package Control: Install Package"
+			],
+			[
+				"lint",
+				"SublimeLinter: Show All Errors"
+			],
+			[
+				"linter",
+				"SublimeLinter: Lint This View"
+			],
+			[
+				"pacak",
+				"Package Control: Remove Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"java",
+				"Set Syntax: JavaScript"
+			]
+		],
+		"width": 528.0
+	},
+	"console":
+	{
+		"height": 221.0,
+		"history":
+		[
+			"import urllib.request,os; pr='Preferences.sublime-settings'; ip='ignored_packages'; n='Package Control'; s=sublime.load_settings(pr); ig=s.get(ip); ig.append(n); s.set(ip,ig); sublime.save_settings('Preferences.sublime-settings'); pf=n+'.sublime-package'; urllib.request.install_opener(urllib.request.build_opener(urllib.request.ProxyHandler())); by=urllib.request.urlopen('https://packagecontrol.io/'+pf.replace(' ','%20')).read(); open(os.path.join(sublime.installed_packages_path(),pf),'wb').write(by); ig.remove(n); s.set(ip,ig); sublime.save_settings(pr); print('Package Control: 3.0.0 upgrade successful!')",
+			"git status",
+			"SublimeLinter",
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/monkey2/modules/timelinefx"
+	],
+	"file_history":
+	[
+		"/C/monkey2/modules/chipmunk/arbiter.monkey2",
+		"/C/monkey2/modules/chipmunk/chipmunk.monkey2",
+		"/C/monkey2/modules/timelinefx/loaders.monkey2",
+		"/C/monkey2/modules/mojo/module.json",
+		"/C/monkey2/modules/timelinefx/module.json",
+		"/C/monkey2/modules/timelinefx/shape2.monkey2",
+		"/C/monkey2/modules/swish/parallax/parallax.monkey2",
+		"/C/monkey2/modules/mojo/graphics/graphicsdevice.monkey2",
+		"/C/monkey2/modules/mojo/input/mouse.monkey2",
+		"/C/monkey2/modules/mojo/app/app.monkey2",
+		"/C/monkey2/modules/timelinefx/collision.monkey2",
+		"/C/monkey2/modules/timelinefx/quadtree.monkey2",
+		"/C/monkey2/modules/timelinefx/gameobject.monkey2",
+		"/C/monkey2/modules/timelinefx/vector.monkey2",
+		"/C/monkey2/modules/timelinefx/effect.monkey2",
+		"/E/Monkey/Spacecraft/assets/tiles/solidblock.json",
+		"/C/monkey2/modules/mojo/app/window.monkey2",
+		"/C/monkey2/modules/mojo/app/sdl_rwstream.monkey2",
+		"/C/monkey2/modules/timelinefx/.gitignore",
+		"/C/monkey2/modules/timelinefx/docs/module.md",
+		"/C/monkey2/modules/timelinefx/particlemanager.monkey2",
+		"/C/monkey2/modules/swish/swish.monkey2",
+		"/C/monkey2/modules/mojo/graphics/image.monkey2",
+		"/C/monkey2/modules/gles20/docs/__PAGES__/index.js",
+		"/C/monkey2/modules/timelinefx/parallax/parallax.monkey2",
+		"/C/monkey2/modules/timelinefx/samples/xml.monkey2",
+		"/C/monkey2/modules/timelinefx/samples/QuadTree.monkey2",
+		"/C/monkey2/modules/timelinefx/samples/tlGameObject.monkey2",
+		"/C/monkey2/modules/timelinefx/samples/gameobject.monkey2",
+		"/C/monkey2/modules/timelinefx/xml.monkey2",
+		"/C/monkey2/modules/timelinefx/LICENSE",
+		"/C/monkey2/modules/timelinefx/matrix.monkey2",
+		"/C/monkey2/modules/timelinefx/math.monkey2",
+		"/C/monkey2/modules/timelinefx/library.monkey2",
+		"/C/monkey2/modules/timelinefx/graphmath.monkey2",
+		"/C/monkey2/modules/timelinefx/attributes.monkey2",
+		"/C/monkey2/modules/timelinefx/fxobject.monkey2",
+		"/C/monkey2/modules/timelinefx/effectattributes.monkey2",
+		"/C/monkey2/modules/timelinefx/timelinefx.monkey2",
+		"/C/monkey2/modules/timelinefx/particle.monkey2",
+		"/C/monkey2/modules/timelinefx/emitterattributes.monkey2",
+		"/C/monkey2/modules/timelinefx/spawncomponents.monkey2",
+		"/C/monkey2/modules/timelinefx/emitter.monkey2",
+		"/C/monkey2/modules/timelinefx/components.monkey2",
+		"/C/monkey2/modules/timelinefx/docs/__PAGES__/timelinefx-tlGameObject.html",
+		"/E/OneDrive/Documents/blog1",
+		"/E/Monkey/Spacecraft/assets/tiles/solidblock2.json",
+		"/E/Monkey/Spacecraft/assets/Player/player.json",
+		"/C/Users/Pete/Downloads/miniz_v115_r4/example4.c",
+		"/C/Users/Pete/Downloads/miniz_v115_r4/example3.c",
+		"/C/Users/Pete/Downloads/miniz_v115_r4/example2.c",
+		"/C/Users/Pete/Downloads/miniz_v115_r4/example1.c",
+		"/C/monkey2/modules/miniz/module.json",
+		"/C/monkey2/modules/timelinefx/samples/assets/data.xml",
+		"/C/monkey2/modules/timelinefx/xml/arrays.monkey2",
+		"/C/monkey2/modules/timelinefx/xml/stringbuilder.monkey2",
+		"/C/monkey2/modules/std/collections/list.monkey2",
+		"/C/monkey2/modules/std/geom/vec2.monkey2",
+		"/E/Monkey/modules/timelinefx/timelinefx.monkey",
+		"/C/Users/Pete/.ssh/id_dsa.pub",
+		"/C/Users/Pete/.ssh/id_rsa.pub",
+		"/C/Users/Pete/.ssh/id_dsa",
+		"/C/Users/Pete/.ssh/id_rsa",
+		"/C/monkey2/modules/timelinefx/shape2.monke2",
+		"/C/monkey2/modules/timelinefx/samples/CheckRayCollision.monkey2",
+		"/C/Users/Pete/AppData/Roaming/Sublime Text 3/Packages/User/monkey2/monkey2.sublime-syntax",
+		"/C/Users/Pete/AppData/Roaming/Sublime Text 3/Packages/User/monkey2/snippets/function.sublime-snippet",
+		"/C/Users/Pete/AppData/Roaming/Sublime Text 3/Packages/User/Default (Linux).sublime-keymap",
+		"/E/xampp/htdocs/onfarmdemo/index.php",
+		"/E/xampp/htdocs/onfarmdemo/assets/js/main.js",
+		"/E/xampp/htdocs/swish-css/wp-content/themes/swish/src/sass/main.scss",
+		"/E/xampp/htdocs/swish-css/wp-content/themes/swish/src/sass/_settings.scss",
+		"/E/xampp/htdocs/swish-css/wp-content/themes/swish/src/sass/_forms.scss",
+		"/E/xampp/htdocs/swish-css/wp-content/themes/swish/src/sass/_grid.scss",
+		"/E/xampp/htdocs/swish-css/wp-content/themes/swish/src/js/collapsable.js",
+		"/E/xampp/htdocs/swish-css/wp-content/themes/swish/src/js/main.js",
+		"/E/xampp/htdocs/swish-css/wp-content/themes/swish/src/js/swish-framework.js",
+		"/E/xampp/htdocs/swish-css/wp-content/themes/swish/src/sass/_ripple.scss",
+		"/E/xampp/htdocs/swish-css/wp-content/themes/swish/src/js/ripple.js",
+		"/E/xampp/htdocs/swish-css/wp-content/themes/swish/src/sass/_wordpress.scss",
+		"/E/xampp/htdocs/swish-css/wp-content/themes/swish/src/sass/_nav.scss",
+		"/E/xampp/htdocs/swish-css/wp-content/themes/swish/src/js/components.js",
+		"/E/xampp/htdocs/swish-css/wp-content/themes/swish/src/sass/_components.scss",
+		"/E/xampp/htdocs/swish-css/wp-content/themes/swish/src/js/modal.js",
+		"/E/xampp/htdocs/swish-css/wp-content/themes/swish/header.php",
+		"/E/xampp/htdocs/swish-css/wp-content/themes/swish/functions.php",
+		"/E/xampp/htdocs/swish-css/wp-content/themes/swish/src/js/responsive-menu.js",
+		"/E/FreelanceWork/Scrapbook/wp-config.php",
+		"/E/xampp/htdocs/swish-css/wp-content/themes/swish/src/sass/_mixins.scss",
+		"/E/xampp/htdocs/swish-css/wp-includes/functions.php",
+		"/E/FreelanceWork/Scrapbook/index.php",
+		"/E/xampp/htdocs/swish-css/wp-content/themes/swish/src/js/hammer.js",
+		"/E/FreelanceWork/Scrapbook/.htaccess",
+		"/E/FreelanceWork/Scrapbook/index.html",
+		"/E/xampp/htdocs/swish-css/wp-content/themes/swish/page.php",
+		"/E/xampp/htdocs/swish-css/wp-content/themes/swish/inc/template-tags.php",
+		"/E/xampp/htdocs/swish-css/wp-includes/media.php",
+		"/C/BlitzMax150/mingwupdate.bat",
+		"/C/Blitzmax-git/mod/bah.mod/freeimage.mod/src/LibWebP/src/dsp/dsp.upsampling_mips_dsp_r2.c",
+		"/C/Blitzmax-git/mod/bah.mod/freeimage.mod/src/LibWebP/src/dsp/dsp.yuv_mips_dsp_r2.c",
+		"/C/Users/Pete/AppData/Roaming/Sublime Text 3/Packages/Default/Default (Windows).sublime-keymap",
+		"/C/Users/Pete/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
+		"/C/Users/Pete/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/C/Users/Pete/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/E/xampp/htdocs/swish-css/wp-content/themes/swish/index.php",
+		"/E/xampp/htdocs/swish-css/wp-content/themes/swish/template-parts/content-single.php",
+		"/E/xampp/htdocs/swish-css/wp-content/themes/swish/single.php",
+		"/E/xampp/htdocs/swish-css/wp-content/themes/swish/src/js/swish-card-mosaic.js",
+		"/E/xampp/htdocs/swish-css/wp-content/themes/swish/inc/menu-walker.php",
+		"/E/xampp/htdocs/swish-css/wp-content/themes/swish/src/sass/_collapsable.scss",
+		"/E/TimelineFX/TimelineFX Bugs/__README__.txt",
+		"/E/FreelanceWork/CentosNotes.txt",
+		"/C/Users/Pete/AppData/Roaming/Sublime Text 3/Packages/User/Fetch.sublime-settings",
+		"/E/xampp/htdocs/swish-css/wp-content/themes/swish/.gitignore",
+		"/E/FreelanceWork/imapsync/imapsync_1.607/syncmcadamsl.bat",
+		"/E/xampp/htdocs/swish-css/wp-content/themes/swish/src/js/moduleTemplate.js",
+		"/E/xampp/htdocs/swish-css/.htaccess",
+		"/E/xampp/htdocs/swish-css/wp-content/themes/swish/template-parts/content-page.php",
+		"/E/xampp/htdocs/swish-css/wp-content/themes/swish/src/js/swishCardMosaic.js",
+		"/E/xampp/htdocs/swish-css/wp-content/themes/swish/assets/js/navigation.js",
+		"/E/xampp/htdocs/swish-css/wp-content/themes/twentyfifteen/index.php",
+		"/E/xampp/htdocs/swish-css/wp-content/themes/swish/archive.php",
+		"/E/xampp/htdocs/swish-css/wp-content/themes/swish/search.php",
+		"/E/xampp/htdocs/swish-css/wp-content/themes/swish/footer.php",
+		"/E/xampp/htdocs/swish-css/wp-content/themes/swish/sidebar.php",
+		"/E/xampp/htdocs/swish-css/wp-admin/css/colors/_mixins.scss",
+		"/E/xampp/htdocs/swish-css/wp-content/themes/swish/template-parts/content.php",
+		"/E/xampp/htdocs/swish-css/wp-content/themes/swish/template-parts/content-search.php"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+			"C:\\monkey2\\modules\\mojo",
+			"C:\\monkey2\\modules\\",
+			"C:\\monkey2\\modules\\mojo",
+			"C:\\monkey2\\modules\\timelinefx",
+			"E:\\xampp\\htdocs\\swish-css\\wp-admin",
+			"E:\\xampp\\htdocs\\swish-css\\wp-includes",
+			"E:\\xampp\\htdocs\\swish-css\\wp-include",
+			"E:\\xampp\\htdocs\\swish-css\\wp-includes",
+			"E:\\xampp\\htdocs\\image-logo.co.uk\\wp-content\\plugins\\gravityforms",
+			"E:\\xampp\\htdocs\\image-logo.co.uk\\wp-content\\plugins\\",
+			"E:\\xampp\\htdocs\\image-logo.co.uk\\wp-content\\themes\\",
+			"E:\\xampp\\htdocs\\image-logo.co.uk\\wp-content\\plugins\\woocommerce-quote-builder",
+			"E:\\xampp\\htdocs\\image-logo.co.uk\\wp-content\\plugins\\woocommerce",
+			"E:\\xampp\\htdocs\\image-logo.co.uk\\wp-content\\plugins\\easy-social-share-buttons3",
+			"E:\\xampp\\htdocs\\image-logo.co.uk\\wp-content\\themes",
+			"E:\\FreelanceWork\\Scrapbook\\greensqaure\\wp-content\\themes\\greensquare",
+			"E:\\xampp\\htdocs\\image-logo.co.uk\\wp-content\\plugins\\woocommerce",
+			"E:\\xampp\\htdocs\\image-logo.co.uk\\wp-content\\themes",
+			"E:\\xampp\\htdocs\\image-logo.co.uk\\wp-content\\plugins\\woocommerce-quote-builder",
+			"E:\\xampp\\htdocs\\image-logo.co.uk\\wp-includes\\",
+			"E:\\xampp\\htdocs\\image-logo.co.uk\\wp-content\\plugins\\woocommerce",
+			"E:\\xampp\\htdocs\\image-logo.co.uk\\wp-content\\plugins\\js_composer",
+			"E:\\xampp\\htdocs\\image-logo.co.uk\\wp-content\\plugins\\woocommerce",
+			"E:\\xampp\\htdocs\\image-logo.co.uk\\wp-content\\plugins\\jc_composer\\",
+			"E:\\xampp\\htdocs\\image-logo.co.uk\\wp-content\\plugins\\jc_composer",
+			"E:\\xampp\\htdocs\\image-logo.co.uk\\wp-content\\plugins\\woocommerce",
+			"E:\\xampp\\htdocs\\image-logo.co.uk\\wp-content\\themes\\internals_theme\\",
+			"E:\\xampp\\htdocs\\image-logo.co.uk\\wp-content\\themes\\internals_theme\\admin",
+			"E:\\xampp\\htdocs\\image-logo.co.uk\\wp-content\\themes\\internals_theme",
+			"E:\\xampp\\htdocs\\image-logo.co.uk\\wp-content\\plugins\\woocommerce",
+			"E:\\xampp\\htdocs\\image-logo.co.uk\\wp-content\\themes\\internals_theme",
+			"E:\\xampp\\htdocs\\image-logo.co.uk\\wp-content\\plugins\\woocommerce",
+			"E:\\xampp\\htdocs\\image-logo.co.uk\\wp-content\\themes\\internals_theme",
+			"E:\\xampp\\htdocs\\image-logo.co.uk\\wp-content\\themes",
+			"E:\\xampp\\htdocs\\image-logo.co.uk\\wp-content\\plugins\\js_composer",
+			"E:\\xampp\\htdocs\\image-logo.co.uk\\wp-content\\themes\\internals_theme",
+			"E:\\xampp\\htdocs\\image-logo.co.uk\\wp-content\\themes\\internals",
+			"E:\\xampp\\htdocs\\image-logo.co.uk\\wp-content\\plugins\\js_composer",
+			"E:\\xampp\\htdocs\\image-logo.co.uk\\wp-content\\plugins\\woocommerce",
+			"E:\\xampp\\htdocs\\image-logo.co.uk\\wp-content\\plugins\\wpai-woocommerce-add-on",
+			"E:\\xampp\\htdocs\\image-logo.co.uk\\wp-content\\plugins",
+			"E:\\xampp\\htdocs\\image-logo.co.uk\\wp-content\\themes\\",
+			"E:\\xampp\\htdocs\\image-logo.co.uk\\wp-content\\plugins\\woocommerce",
+			"E:\\xampp\\htdocs\\image-logo.co.uk\\wp-content\\plugins\\woocommerce-product-importer-deluxe",
+			"E:\\xampp\\htdocs\\image-logo.co.uk\\wp-content\\plugins\\js_composer",
+			"E:\\xampp\\htdocs\\image-logo.co.uk\\wp-content\\themes\\internals",
+			"E:\\xampp\\htdocs\\image-logo.co.uk\\wp-content\\plugins\\woocommerce",
+			"E:\\xampp\\htdocs\\image-logo.co.uk\\wp-content\\themes/internals_theme/*.php",
+			"E:\\xampp\\htdocs\\image-logo.co.uk\\wp-content\\themes/internals_theme",
+			"E:\\xampp\\htdocs\\image-logo.co.uk\\wp-content\\themes/internals",
+			"E:\\xampp\\htdocs\\image-logo.co.uk\\wp-content\\plugins\\woocommerce",
+			"E:\\xampp\\htdocs\\image-logo.co.uk\\wp-content\\plugins\\contact-form-7",
+			"E:\\xampp\\htdocs\\image-logo.co.uk\\wp-content\\plugins\\",
+			"E:\\xampp\\htdocs\\image-logo.co.uk\\wp-content\\plugins\\js_composer",
+			"E:\\xampp\\htdocs\\image-logo.co.uk\\wp-content\\plugins\\redux-framework",
+			"E:\\xampp\\htdocs\\image-logo.co.uk\\wp-content\\plugins\\wp-api",
+			"E:\\xampp\\htdocs\\image-logo.co.uk\\wp-content\\plugins\\",
+			"E:\\xampp\\htdocs\\image-logo.co.uk\\wp-content\\plugins\\wp-api",
+			"E:\\xampp\\htdocs\\image-logo.co.uk\\wp-content\\plugins\\json-rest-api",
+			"E:\\xampp\\htdocs\\image-logo.co.uk\\wp-content\\plugins\\wp-api",
+			"E:\\xampp\\htdocs\\image-logo.co.uk\\wp-includes",
+			"E:\\xampp\\htdocs\\thedecoratingstore.co.uk\\vqmod",
+			"E:\\xampp\\htdocs\\thedecoratingstore.co.uk\\system",
+			"E:\\xampp\\htdocs\\thedecoratingstore.co.uk\\catalog",
+			"E:\\xampp\\htdocs\\thedecoratingstore.co.uk\\catalog/model",
+			"E:\\xampp\\htdocs\\thedecoratingstore.co.uk\\catalog/controller",
+			"E:\\xampp\\htdocs\\thedecoratingstore.co.uk\\catalog/controler",
+			"E:\\xampp\\htdocs\\thedecoratingstore.co.uk\\catalog/language",
+			"E:\\xampp\\htdocs\\thedecoratingstore.co.uk\\catalog",
+			"E:\\xampp\\htdocs\\thedecoratingstore.co.uk\\system",
+			"E:\\xampp\\htdocs\\thedecoratingstore.co.uk\\vqmod\\vqcache",
+			"E:\\xampp\\htdocs\\thedecoratingstore.co.uk\\catalog\\language",
+			"E:\\xampp\\htdocs\\thedecoratingstore.co.uk\\catalog",
+			"E:\\xampp\\htdocs\\thedecoratingstore.co.uk\\",
+			"E:\\xampp\\htdocs\\thedecoratingstore.co.uk\\catalog",
+			"E:\\xampp\\htdocs\\thedecoratingstore.co.uk\\",
+			"E:\\xampp\\htdocs\\thedecoratingstore.co.uk\\vqmod",
+			"E:\\xampp\\htdocs\\thedecoratingstore.co.uk\\admin",
+			"E:\\xampp\\htdocs\\thedecoratingstore.co.uk\\catalog",
+			"E:\\xampp\\htdocs\\thedecoratingstore.co.uk\\sc",
+			"E:\\xampp\\htdocs\\thedecoratingstore.co.uk\\catalog",
+			"E:\\xampp\\htdocs\\thedecoratingstore.co.uk\\sc",
+			"E:\\xampp\\htdocs\\thedecoratingstore.co.uk\\catalog",
+			"E:\\xampp\\htdocs\\thedecoratingstore.co.uk\\vqmod",
+			"E:\\xampp\\htdocs\\thedecoratingstore.co.uk\\Toolbank_scripts",
+			"E:\\xampp\\htdocs\\thedecoratingstore.co.uk\\system",
+			"E:\\xampp\\htdocs\\thedecoratingstore.co.uk\\catalog",
+			"E:\\xampp\\htdocs\\thedecoratingstore.co.uk\\system",
+			"E:\\xampp\\htdocs\\thedecoratingstore.co.uk\\",
+			"E:\\xampp\\htdocs\\thedecoratingstore.co.uk\\catalog",
+			"E:\\xampp\\htdocs\\thedecoratingstore.co.uk"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"tform",
+			"#Rem monkeydoc ",
+			"#End",
+			"Method",
+			"Property",
+			"Function",
+			"Method project",
+			"project",
+			"Length",
+			"SetPosition",
+			"TForm()",
+			"update(",
+			"update",
+			"Project",
+			"SetImage",
+			"quadtreeevent",
+			"UpdateEvents",
+			"SDL_WaitEvent",
+			"UpdateWindow",
+			"UpdateEvents",
+			"MouseDevice.Update",
+			"_ublocks",
+			"ValidateUniforms",
+			"Validate2",
+			"ValidateUniforms",
+			"mx2_Vertex",
+			"glBindAttribLocation",
+			"mx2_ImageColor",
+			"Field",
+			"`",
+			"HEAD",
+			"Function LoadEffects",
+			"tlCAPTURE_ALL",
+			"function degrad",
+			"about: ",
+			"returns:",
+			"#end",
+			"#rem",
+			"bbdoc:",
+			"Class tlPoint",
+			"#END",
+			"#End",
+			"#END",
+			"#REM",
+			"summary: ",
+			"Class tl",
+			"\t#REM\n\t\tbbdoc:Insert your Update code here\n\t#END",
+			"Class tl",
+			"#REM",
+			"#Rem",
+			"#REM",
+			"#END",
+			"#End",
+			"#END",
+			"#end",
+			"#End",
+			"#END",
+			"#End",
+			"Summary:",
+			"Global",
+			"Const",
+			"Class tl",
+			"about: ",
+			"returns:",
+			"bbdoc:",
+			"Class tl",
+			"Class ",
+			"Class",
+			"Property",
+			"\t#Rem monkeydoc @hidden\n\t#End",
+			"bbdoc:",
+			"bbdoc: ",
+			"Method",
+			"Property",
+			"Field",
+			"add",
+			"</b>",
+			"<b>",
+			"<p>",
+			"Property",
+			"</i>",
+			"<i>",
+			"</b>",
+			"<b>",
+			"<br/>",
+			"</p>",
+			"summary: ",
+			"#END",
+			"#end",
+			"#END",
+			"#REM",
+			"#Rem",
+			"#REM",
+			"#Rem",
+			"#REM",
+			"#rem",
+			"#END",
+			"#REM",
+			"_tlVEector_",
+			"_tlPolgon_",
+			"_tlCirlce_",
+			"_GetReboundVector_",
+			"_tlQuadTree_",
+			"_Object_",
+			"_CheckCollision_",
+			"_tlCollisionResult_",
+			"_tlPolygon_",
+			"_tlLine_",
+			"_tlCircle_",
+			"_tlBox_",
+			"_PreventOverlap_",
+			" hidden",
+			"Animate",
+			"SetCollisionCircle",
+			"\t#Rem\n\t\tmonkeydoc",
+			"_tlBox",
+			"Collision circle class, extends _tlBox",
+			"bbdocs",
+			"#Rem",
+			"#End",
+			"#END",
+			"#end",
+			"#END",
+			"#Rem",
+			"#rem",
+			"#Rem",
+			"#rem",
+			"#Rem"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"layerconfigs",
+			"<?php",
+			"?>"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "spawncomponents.monkey2",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 17065,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2404,
+								2404
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Earthsong (SL).tmTheme",
+							"syntax": "Packages/User/monkey2/monkey2.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": -0.0,
+						"translation.y": 1134.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "gameobject.monkey2",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 46742,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								42815,
+								41615
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Earthsong (SL).tmTheme",
+							"syntax": "Packages/User/monkey2/monkey2.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 26537.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "vector.monkey2",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6516,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								6355,
+								6366
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Earthsong (SL).tmTheme",
+							"syntax": "Packages/User/monkey2/monkey2.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 4117.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/E/Monkey/MonkeyTuts/.gitignore",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 13,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								13,
+								13
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Earthsong (SL).tmTheme",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/E/FreelanceWork/Dropbox/Freelance/ImageLogo/focus_css_backup.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7274,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								6584,
+								6584
+							]
+						],
+						"settings":
+						{
+							"auto_name": "@import url('https://fonts.googleapis.com/css?fami",
+							"color_scheme": "Packages/User/Color Highlighter/themes/Earthsong (SL).tmTheme",
+							"syntax": "Packages/CSS/CSS.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1836.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.git":
+	{
+		"height": 100.0
+	},
+	"pinned_build_system": "",
+	"project": "timelinefx.sublime-project",
+	"replace":
+	{
+		"height": 48.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"vector",
+				"vector.monkey2"
+			],
+			[
+				"game",
+				"gameobject.monkey2"
+			],
+			[
+				"",
+				"spawncomponents.monkey2"
+			],
+			[
+				"shape",
+				"shape2.monkey2"
+			],
+			[
+				"vecto",
+				"vector.monkey2"
+			],
+			[
+				"effe",
+				"effect.monkey2"
+			],
+			[
+				"gameobj",
+				"gameobject.monkey2"
+			],
+			[
+				"quad",
+				"quadtree.monkey2"
+			],
+			[
+				"colli",
+				"collision.monkey2"
+			],
+			[
+				"shap",
+				"shape2.monkey2"
+			],
+			[
+				"particle",
+				"particlemanager.monkey2"
+			],
+			[
+				"collision",
+				"collision.monkey2"
+			],
+			[
+				"quadtree.monkey",
+				"quadtree.monkey2"
+			],
+			[
+				"quadtr",
+				"samples\\QuadTree.monkey2"
+			],
+			[
+				"matri",
+				"matrix.monkey2"
+			],
+			[
+				"librar",
+				"library.monkey2"
+			],
+			[
+				"attribu",
+				"attributes.monkey2"
+			],
+			[
+				"fxobj",
+				"fxobject.monkey2"
+			],
+			[
+				"eff",
+				"effectattributes.monkey2"
+			],
+			[
+				"tim",
+				"timelinefx.monkey2"
+			],
+			[
+				"parti",
+				"particle.monkey2"
+			],
+			[
+				"loader",
+				"loaders.monkey2"
+			],
+			[
+				"compon",
+				"components.monkey2"
+			],
+			[
+				"par",
+				"particle.monkey2"
+			],
+			[
+				"effec",
+				"effect.monkey2"
+			],
+			[
+				"particl",
+				"particlemanager.monkey2"
+			],
+			[
+				"emitter",
+				"emitter.monkey2"
+			],
+			[
+				"partci",
+				"particle.monkey2"
+			],
+			[
+				"math",
+				"math.monkey2"
+			],
+			[
+				"spawn",
+				"spawncomponents.monkey2"
+			],
+			[
+				"gameobject",
+				"gameobject.monkey2"
+			],
+			[
+				"timeline",
+				"timelinefx.monkey2"
+			],
+			[
+				"libray",
+				"library.monkey2"
+			],
+			[
+				"gameob",
+				"gameobject.monkey2"
+			],
+			[
+				"comp",
+				"components.monkey2"
+			],
+			[
+				"part",
+				"particlemanager.monkey2"
+			],
+			[
+				"fx",
+				"fxobject.monkey2"
+			],
+			[
+				"fxob",
+				"fxobject.monkey2"
+			],
+			[
+				"effect",
+				"effect.monkey2"
+			],
+			[
+				"loaders",
+				"loaders.monkey2"
+			],
+			[
+				"timelin",
+				"timelinefx.monkey2"
+			],
+			[
+				"xml",
+				"samples\\xml.monkey2"
+			],
+			[
+				"matrix",
+				"matrix.monkey2"
+			],
+			[
+				"emi",
+				"emitterattributes.monkey2"
+			],
+			[
+				"vec",
+				"vector.monkey2"
+			],
+			[
+				"time",
+				"timelinefx.monkey2"
+			],
+			[
+				"libra",
+				"library.monkey2"
+			],
+			[
+				"attri",
+				"attributes.monkey2"
+			],
+			[
+				"vector2",
+				"vector.monkey2"
+			],
+			[
+				"effectatt",
+				"effectattributes.monkey2"
+			],
+			[
+				"vect",
+				"vector.monkey2"
+			],
+			[
+				"fxobject",
+				"fxobject.monkey2"
+			],
+			[
+				"quadtre",
+				"quadtree.monkey2"
+			],
+			[
+				"quadtree",
+				"quadtree.monkey2"
+			],
+			[
+				"attr",
+				"attributes.monkey2"
+			],
+			[
+				"gra",
+				"graphmath.monkey2"
+			],
+			[
+				"timelinef",
+				"timelinefx.monkey2"
+			],
+			[
+				"effectattribu",
+				"effectattributes.monkey2"
+			],
+			[
+				"compo",
+				"components.monkey2"
+			],
+			[
+				".git",
+				".gitignore"
+			],
+			[
+				"coll",
+				"collision.monkey2"
+			],
+			[
+				"collisio",
+				"collision.monkey2"
+			],
+			[
+				"checkray",
+				"samples\\CheckRayCollision.monkey2"
+			],
+			[
+				"cont",
+				"contactthanks.php"
+			],
+			[
+				"con",
+				"contactengine.php"
+			],
+			[
+				"grid",
+				"src\\sass\\_grid.scss"
+			],
+			[
+				"forms",
+				"src\\sass\\_forms.scss"
+			],
+			[
+				"setting",
+				"src\\sass\\_settings.scss"
+			],
+			[
+				"main",
+				"src\\sass\\main.scss"
+			],
+			[
+				"style",
+				"style.css"
+			],
+			[
+				"gulp",
+				"gulpfile.js"
+			],
+			[
+				"header",
+				"wp-content\\themes\\swish\\header.php"
+			],
+			[
+				"main.scss",
+				"wp-content\\themes\\swish\\src\\sass\\main.scss"
+			],
+			[
+				"head",
+				"wp-content\\themes\\swish\\header.php"
+			],
+			[
+				"nav.s",
+				"wp-content\\themes\\swish\\src\\sass\\_nav.scss"
+			],
+			[
+				"resp",
+				"wp-content\\themes\\swish\\src\\js\\responsive-menu.js"
+			],
+			[
+				"rippl.scs",
+				"wp-content\\themes\\swish\\src\\sass\\_ripple.scss"
+			],
+			[
+				"respons",
+				"wp-content\\themes\\swish\\src\\js\\responsive-menu.js"
+			],
+			[
+				"_word",
+				"wp-content\\themes\\swish\\src\\sass\\_wordpress.scss"
+			],
+			[
+				"mix",
+				"wp-content\\themes\\swish\\src\\sass\\_mixins.scss"
+			],
+			[
+				"func",
+				"wp-content\\themes\\swish\\functions.php"
+			],
+			[
+				"functions",
+				"wp-content\\themes\\swish\\functions.php"
+			],
+			[
+				"ripple",
+				"wp-content\\themes\\swish\\src\\js\\ripple.js"
+			],
+			[
+				"function",
+				"wp-content\\themes\\swish\\functions.php"
+			],
+			[
+				"modal",
+				"wp-content\\themes\\swish\\src\\js\\modal.js"
+			],
+			[
+				"media",
+				"wp-includes\\media.php"
+			],
+			[
+				"template",
+				"wp-content\\themes\\swish\\src\\js\\moduleTemplate.js"
+			],
+			[
+				"page",
+				"wp-content\\themes\\swish\\page.php"
+			],
+			[
+				"templ",
+				"wp-content\\themes\\swish\\src\\js\\moduleTemplate.js"
+			],
+			[
+				"_grid",
+				"wp-content\\themes\\swish\\src\\sass\\_grid.scss"
+			],
+			[
+				"settings",
+				"wp-content\\themes\\swish\\src\\sass\\_settings.scss"
+			],
+			[
+				"reposn",
+				"wp-content\\themes\\swish\\src\\js\\responsive-menu.js"
+			],
+			[
+				"collap",
+				"wp-content\\themes\\swish\\src\\js\\collapsable.js"
+			],
+			[
+				"wordpress",
+				"wp-content\\themes\\swish\\src\\sass\\_wordpress.scss"
+			],
+			[
+				"main.js",
+				"wp-content\\themes\\swish\\src\\js\\main.js"
+			],
+			[
+				"template-tag",
+				"wp-content\\themes\\swish\\inc\\template-tags.php"
+			],
+			[
+				"single",
+				"wp-content\\themes\\swish\\single.php"
+			],
+			[
+				"swish-walker",
+				"wp-content\\themes\\swish\\inc\\menu-walker.php"
+			],
+			[
+				"respon",
+				"wp-content\\themes\\swish\\src\\js\\responsive-menu.js"
+			],
+			[
+				"collaps",
+				"wp-content\\themes\\swish\\src\\js\\collapsable.js"
+			],
+			[
+				"_coll",
+				"wp-content\\themes\\swish\\src\\sass\\_collapsable.scss"
+			],
+			[
+				"nav.scss",
+				"wp-content\\themes\\swish\\src\\sass\\_nav.scss"
+			],
+			[
+				"respo",
+				"wp-content\\themes\\swish\\src\\js\\responsive-menu.js"
+			],
+			[
+				"swish-card",
+				"wp-content\\themes\\swish\\src\\js\\swish-card-mosaic.js"
+			],
+			[
+				"ripple.js",
+				"wp-content\\themes\\swish\\src\\js\\ripple.js"
+			],
+			[
+				"rippl",
+				"wp-content\\themes\\swish\\src\\sass\\_ripple.scss"
+			],
+			[
+				"mixin",
+				"wp-content\\themes\\swish\\src\\sass\\_mixins.scss"
+			],
+			[
+				".htacc",
+				".htaccess"
+			],
+			[
+				"_wordp",
+				"wp-content\\themes\\swish\\src\\sass\\_wordpress.scss"
+			],
+			[
+				"mixins",
+				"wp-content\\themes\\swish\\src\\sass\\_mixins.scss"
+			],
+			[
+				"_sett",
+				"wp-content\\themes\\swish\\src\\sass\\_settings.scss"
+			],
+			[
+				"main.scs",
+				"wp-content\\themes\\swish\\src\\sass\\main.scss"
+			],
+			[
+				"modulet",
+				"wp-content\\themes\\swish\\src\\js\\moduleTemplate.js"
+			],
+			[
+				"_nav",
+				"wp-content\\themes\\swish\\src\\sass\\_nav.scss"
+			],
+			[
+				"componen",
+				"wp-content\\themes\\swish\\src\\js\\components.js"
+			],
+			[
+				"responsive",
+				"wp-content\\themes\\swish\\src\\js\\responsive-menu.js"
+			],
+			[
+				"navigation",
+				"wp-content\\themes\\swish\\assets\\js\\navigation.js"
+			],
+			[
+				"template.js",
+				"wp-content\\themes\\swish\\src\\js\\moduleTemplate.js"
+			],
+			[
+				"content-page",
+				"wp-content\\themes\\swish\\template-parts\\content-page.php"
+			],
+			[
+				"_setting",
+				"wp-content\\themes\\swish\\src\\sass\\_settings.scss"
+			],
+			[
+				"menu-walker",
+				"wp-content\\themes\\swish\\inc\\menu-walker.php"
+			],
+			[
+				"content-sing",
+				"wp-content\\themes\\swish\\template-parts\\content-single.php"
+			],
+			[
+				"sing",
+				"wp-content\\themes\\swish\\single.php"
+			],
+			[
+				"_wordpre",
+				"wp-content\\themes\\swish\\src\\sass\\_wordpress.scss"
+			],
+			[
+				"search",
+				"wp-content\\themes\\swish\\search.php"
+			],
+			[
+				"archi",
+				"wp-content\\themes\\swish\\archive.php"
+			],
+			[
+				"_mixin",
+				"wp-admin\\css\\colors\\_mixins.scss"
+			],
+			[
+				"side",
+				"wp-content\\themes\\swish\\sidebar.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "snug",
+		"selected_items":
+		[
+			[
+				"snug",
+				"C:\\xampp7\\htdocs\\snugglebundl.com\\snugglebundl.sublime-project"
+			],
+			[
+				"timel",
+				"C:\\monkey2\\modules\\timelinefx\\timelinefx.sublime-project"
+			],
+			[
+				"time",
+				"C:\\monkey2\\modules\\timelinefx\\timelinefx.sublime-project"
+			],
+			[
+				"sxbed",
+				"C:\\xampp7\\htdocs\\sxbeds-woocommerce\\sxbeds-woocommerce.sublime-project"
+			],
+			[
+				"sxbeds",
+				"C:\\xampp7\\htdocs\\sxbeds-woocommerce\\sxbeds-woocommerce.sublime-project"
+			],
+			[
+				"image",
+				"E:\\xampp\\htdocs\\image-logo.co.uk\\internals.sublime-project"
+			],
+			[
+				"sx",
+				"C:\\xampp7\\htdocs\\sxbeds-woocommerce\\sxbeds-woocommerce.sublime-project"
+			],
+			[
+				"suss",
+				"E:\\xampp\\htdocs\\sussexbedcentre.co.uk\\sussexbeds.sublime-project"
+			],
+			[
+				"mcada",
+				"E:\\xampp\\htdocs\\mcadamspetfoods.com\\mcadamspetfoods.sublime-project"
+			],
+			[
+				"sxbe",
+				"C:\\xampp7\\htdocs\\sxbeds-woocommerce\\sxbeds-woocommerce.sublime-project"
+			],
+			[
+				"sxbedswoo",
+				"C:\\xampp7\\htdocs\\sxbeds-woocommerce\\sxbeds-woocommerce.sublime-project"
+			],
+			[
+				"sxbeds-w",
+				"C:\\xampp7\\htdocs\\sxbeds-woocommerce\\sxbeds-woocommerce.sublime-project"
+			],
+			[
+				"susse",
+				"E:\\xampp\\htdocs\\sussexbedcentre.co.uk\\sussexbeds.sublime-project"
+			],
+			[
+				"star",
+				"C:\\Users\\Pete\\Downloads\\monkey2\\bananas\\stargate\\stargate.sublime-project"
+			],
+			[
+				"sxbedwoo",
+				"C:\\xampp7\\htdocs\\sxbeds-woocommerce\\sxbeds-woocommerce.sublime-project"
+			],
+			[
+				"decorat",
+				"E:\\xampp_5_4\\htdocs\\thedecoratingstore.co.uk\\thedecoratingstore.sublime-project"
+			],
+			[
+				"sxbd",
+				"C:\\xampp7\\htdocs\\sxbeds-woocommerce\\sxbeds-woocommerce.sublime-project"
+			],
+			[
+				"internal",
+				"E:\\xampp\\htdocs\\image-logo.co.uk\\internals.sublime-project"
+			],
+			[
+				"inter",
+				"E:\\xampp\\htdocs\\image-logo.co.uk\\internals.sublime-project"
+			],
+			[
+				"internals",
+				"E:\\xampp\\htdocs\\image-logo.co.uk\\internals.sublime-project"
+			],
+			[
+				"",
+				"E:\\xampp\\htdocs\\CodeIgniter\\manorpromo.sublime-project"
+			],
+			[
+				"sus",
+				"E:\\xampp\\htdocs\\sussexbedcentre.co.uk\\sussexbeds.sublime-project"
+			],
+			[
+				"manor",
+				"E:\\xampp\\htdocs\\CodeIgniter\\manorpromo.sublime-project"
+			],
+			[
+				"manorpromo",
+				"E:\\xampp\\htdocs\\CodeIgniter\\manorpromo.sublime-project"
+			],
+			[
+				"mano",
+				"E:\\xampp\\htdocs\\CodeIgniter\\manorpromo.sublime-project"
+			],
+			[
+				"swi",
+				"E:\\xampp\\htdocs\\swish-css\\swish.sublime-project"
+			],
+			[
+				"mc",
+				"E:\\xampp\\htdocs\\mcadamspetfoods.com\\mcadamspetfoods.sublime-project"
+			],
+			[
+				"thedec",
+				"E:\\xampp_5_4\\htdocs\\thedecoratingstore.co.uk\\thedecoratingstore.sublime-project"
+			],
+			[
+				"wedd",
+				"E:\\xampp\\htdocs\\weddingrings2u.com\\wr2u.sublime-project"
+			],
+			[
+				"suus",
+				"E:\\xampp\\htdocs\\sussexbedcentre.co.uk\\sussexbeds.sublime-project"
+			],
+			[
+				"thedecor",
+				"E:\\xampp_5_4\\htdocs\\thedecoratingstore.co.uk\\thedecoratingstore.sublime-project"
+			],
+			[
+				"man",
+				"E:\\xampp\\htdocs\\CodeIgniter\\manorpromo.sublime-project"
+			],
+			[
+				"intern",
+				"E:\\xampp\\htdocs\\image-logo.co.uk\\internals.sublime-project"
+			],
+			[
+				"finch",
+				"E:\\xampp\\htdocs\\finchhouse.co.uk\\finchhouse.sublime-project"
+			],
+			[
+				"thede",
+				"E:\\xampp\\htdocs\\thedecoratingstore.co.uk\\thedecoratingstore.sublime-project"
+			],
+			[
+				"deans",
+				"E:\\xampp\\htdocs\\deansplacehotel.co.uk\\deansplacehotel.sublime-project"
+			],
+			[
+				"sussex",
+				"E:\\xampp\\htdocs\\sussexbedcentre.co.uk\\sussexbeds.sublime-project"
+			],
+			[
+				"the",
+				"E:\\xampp\\htdocs\\thedecoratingstore.co.uk\\thedecoratingstore.sublime-project"
+			],
+			[
+				"sussexbedce",
+				"E:\\xampp\\htdocs\\sussexbedcentre.co.uk\\sussexbeds.sublime-project"
+			],
+			[
+				"ima",
+				"E:\\xampp\\htdocs\\image-logo\\image-logo.sublime-project"
+			],
+			[
+				"we",
+				"E:\\xampp\\htdocs\\weddingrings2u.com\\wr2u.sublime-project"
+			],
+			[
+				"dec",
+				"E:\\xampp\\htdocs\\deansplacehotel.co.uk\\deansplacehotel.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+		"xdebug":
+		{
+			"hide_conflict": false
+		}
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": false,
+	"side_bar_width": 316.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

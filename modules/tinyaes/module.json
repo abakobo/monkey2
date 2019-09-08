@@ -1,0 +1,8 @@
+{
+  "module": "tinyaes",
+  "about": "AES encryption",
+  "author": "Jonathan Pittock",
+  "version": "0.1.0",
+  "support": "https://github.com/skn3/tinyaes",
+  "depends": ["libc", "std", "monkey"]
+}

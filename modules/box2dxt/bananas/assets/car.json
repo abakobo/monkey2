@@ -1,0 +1,904 @@
+
+{
+	"allowSleep" : true,
+	"autoClearForces" : true,
+	"body" : 
+	[
+		
+		{
+			"angle" : 0,
+			"angularVelocity" : 0,
+			"awake" : true,
+			"fixedRotation" : true,
+			"fixture" : 
+			[
+				
+				{
+					"density" : 1.789999961853027,
+					"friction" : 0.250,
+					"name" : "playerupper",
+					"polygon" : 
+					{
+						"vertices" : 
+						{
+							"x" : 
+							[
+								0.3002238869667053,
+								0.3002237379550934,
+								0.2154128700494766,
+								-0.2113303095102310,
+								-0.3002237379550934,
+								-0.3002237081527710,
+								-0.2218291610479355,
+								0.2283110022544861
+							],
+							"y" : 
+							[
+								-0.4160324931144714,
+								0.3051185309886932,
+								0.4533979892730713,
+								0.4528201818466187,
+								0.3051185309886932,
+								-0.4160327315330505,
+								-0.5100000500679016,
+								-0.5108833909034729
+							]
+						}
+					}
+				}
+			],
+			"linearVelocity" : 
+			{
+				"x" : 0,
+				"y" : 0
+			},
+			"massData-I" : 0.001082192989997566,
+			"massData-center" : 
+			{
+				"x" : 0.0003362217976246029,
+				"y" : -0.03289639949798584
+			},
+			"massData-mass" : 0.9999139308929443,
+			"name" : "playerupper",
+			"position" : 
+			{
+				"x" : 1.279839158058167,
+				"y" : 3.114712476730347
+			},
+			"type" : 2
+		},
+		
+		{
+			"angle" : 0,
+			"angularVelocity" : 0,
+			"awake" : true,
+			"fixture" : 
+			[
+				
+				{
+					"density" : 0.750,
+					"friction" : 0.8000000119209290,
+					"name" : "carupper",
+					"polygon" : 
+					{
+						"vertices" : 
+						{
+							"x" : 
+							[
+								1.208260059356690,
+								0.6846150159835815,
+								0.419759988784790,
+								-0.4459980130195618,
+								-0.7959259748458862,
+								-1.103929996490479,
+								-1.367390036582947
+							],
+							"y" : 
+							[
+								0.3468869924545288,
+								0.8653119802474976,
+								0.9186699986457825,
+								1.001880049705505,
+								0.9778829813003540,
+								0.8607249855995178,
+								0.4947359859943390
+							]
+						}
+					},
+					"restitution" : 0.1000000014901161
+				},
+				
+				{
+					"density" : 0.750,
+					"friction" : 0.8000000119209290,
+					"name" : "carlower",
+					"polygon" : 
+					{
+						"vertices" : 
+						{
+							"x" : 
+							[
+								2.391760110855103,
+								2.371400117874146,
+								2.033610105514526,
+								-1.823310017585754,
+								-2.200170040130615,
+								-2.240900039672852,
+								-2.064899921417236,
+								2.104389905929565
+							],
+							"y" : 
+							[
+								-0.2876459956169128,
+								0.1395390033721924,
+								0.2991139888763428,
+								0.5205680131912231,
+								0.334744006395340,
+								-0.2985900044441223,
+								-0.3891539871692658,
+								-0.3894709944725037
+							]
+						}
+					},
+					"restitution" : 0.1000000014901161
+				}
+			],
+			"linearVelocity" : 
+			{
+				"x" : 0,
+				"y" : 0
+			},
+			"massData-I" : 5.389615058898926,
+			"massData-center" : 
+			{
+				"x" : -0.06040598452091217,
+				"y" : 0.1643623560667038
+			},
+			"massData-mass" : 3.529048681259155,
+			"name" : "car",
+			"position" : 
+			{
+				"x" : 0.02885369956493378,
+				"y" : 0.7808920145034790
+			},
+			"type" : 2
+		},
+		
+		{
+			"angle" : 0,
+			"angularVelocity" : 0,
+			"awake" : true,
+			"fixture" : 
+			[
+				
+				{
+					"circle" : 
+					{
+						"center" : 
+						{
+							"x" : 0,
+							"y" : 0
+						},
+						"radius" : 0.4391508996486664
+					},
+					"density" : 4.0,
+					"friction" : 1,
+					"name" : "frontwheel"
+				}
+			],
+			"linearVelocity" : 
+			{
+				"x" : 0,
+				"y" : 0
+			},
+			"massData-I" : 0.2336872369050980,
+			"massData-mass" : 2.423468828201294,
+			"name" : "frontwheel",
+			"position" : 
+			{
+				"x" : 1.646994829177856,
+				"y" : 0.4994073510169983
+			},
+			"type" : 2
+		},
+		
+		{
+			"angle" : 0,
+			"angularVelocity" : 0,
+			"awake" : true,
+			"fixture" : 
+			[
+				
+				{
+					"circle" : 
+					{
+						"center" : 
+						{
+							"x" : 0,
+							"y" : 0
+						},
+						"radius" : 0.4391508996486664
+					},
+					"density" : 4.0,
+					"friction" : 1,
+					"name" : "rearwheel"
+				}
+			],
+			"linearVelocity" : 
+			{
+				"x" : 0,
+				"y" : 0
+			},
+			"massData-I" : 0.2336872369050980,
+			"massData-mass" : 2.423468828201294,
+			"name" : "rearwheel",
+			"position" : 
+			{
+				"x" : -1.281174421310425,
+				"y" : 0.4994073510169983
+			},
+			"type" : 2
+		},
+		
+		{
+			"angle" : 0,
+			"angularVelocity" : 0,
+			"awake" : true,
+			"fixture" : 
+			[
+				
+				{
+					"density" : 1,
+					"friction" : 0.2000000029802322,
+					"name" : "antenna1",
+					"polygon" : 
+					{
+						"vertices" : 
+						{
+							"x" : 
+							[
+								0.0194314718246460,
+								0.0194314718246460,
+								-0.01943159103393555,
+								-0.01943159103393555
+							],
+							"y" : 
+							[
+								-0.2002876996994019,
+								0.2002875804901123,
+								0.2002875804901123,
+								-0.2002876996994019
+							]
+						}
+					}
+				}
+			],
+			"linearVelocity" : 
+			{
+				"x" : 0,
+				"y" : 0
+			},
+			"massData-I" : 0.0002101246063830331,
+			"massData-center" : 
+			{
+				"x" : -5.965754468206796e-008,
+				"y" : -6.092764692766650e-008
+			},
+			"massData-mass" : 0.01556758210062981,
+			"name" : "antenna1",
+			"position" : 
+			{
+				"x" : -1.805551290512085,
+				"y" : 1.473527073860169
+			},
+			"type" : 2
+		},
+		
+		{
+			"angle" : 0,
+			"angularVelocity" : 0,
+			"awake" : true,
+			"fixture" : 
+			[
+				
+				{
+					"circle" : 
+					{
+						"center" : 
+						{
+							"x" : 0.1802209168672562,
+							"y" : 0.1802209615707398
+						},
+						"radius" : 0.1042968779802322
+					},
+					"density" : 1.250,
+					"filter-categoryBits" : 8,
+					"friction" : 0.9800000190734863,
+					"name" : "playerfoot6"
+				},
+				
+				{
+					"circle" : 
+					{
+						"center" : 
+						{
+							"x" : -5.246026194072329e-005,
+							"y" : -0.2548708915710449
+						},
+						"radius" : 0.1042968779802322
+					},
+					"density" : 1.250,
+					"filter-categoryBits" : 8,
+					"friction" : 0.9800000190734863,
+					"name" : "playerfoot3"
+				},
+				
+				{
+					"circle" : 
+					{
+						"center" : 
+						{
+							"x" : -1.924221670890347e-008,
+							"y" : 0.2548708915710449
+						},
+						"radius" : 0.1042968779802322
+					},
+					"density" : 1.250,
+					"filter-categoryBits" : 8,
+					"friction" : 0.9800000190734863,
+					"name" : "playerfoot2"
+				},
+				
+				{
+					"circle" : 
+					{
+						"center" : 
+						{
+							"x" : -0.1802209466695786,
+							"y" : 0.1802209317684174
+						},
+						"radius" : 0.1042968779802322
+					},
+					"density" : 1.250,
+					"filter-categoryBits" : 8,
+					"friction" : 0.9800000190734863,
+					"name" : "playerfoot4"
+				},
+				
+				{
+					"circle" : 
+					{
+						"center" : 
+						{
+							"x" : -0.2548708915710449,
+							"y" : 0
+						},
+						"radius" : 0.1042968779802322
+					},
+					"density" : 1.250,
+					"filter-categoryBits" : 8,
+					"friction" : 0.9800000190734863,
+					"name" : "playerfoot0"
+				},
+				
+				{
+					"circle" : 
+					{
+						"center" : 
+						{
+							"x" : 0.2548708915710449,
+							"y" : -5.247950321063399e-005
+						},
+						"radius" : 0.1042968779802322
+					},
+					"density" : 1.250,
+					"filter-categoryBits" : 8,
+					"friction" : 0.9800000190734863,
+					"name" : "fixture1"
+				},
+				
+				{
+					"circle" : 
+					{
+						"center" : 
+						{
+							"x" : 0.1801838427782059,
+							"y" : -0.180258035659790
+						},
+						"radius" : 0.1042968779802322
+					},
+					"density" : 1.250,
+					"filter-categoryBits" : 8,
+					"friction" : 0.9800000190734863,
+					"name" : "playerfoot5"
+				},
+				
+				{
+					"circle" : 
+					{
+						"center" : 
+						{
+							"x" : -0.1802580207586289,
+							"y" : -0.1801838576793671
+						},
+						"radius" : 0.1042968779802322
+					},
+					"density" : 1.250,
+					"filter-categoryBits" : 8,
+					"friction" : 0.9800000190734863,
+					"name" : "playerfoot7"
+				}
+			],
+			"linearVelocity" : 
+			{
+				"x" : 0,
+				"y" : 0
+			},
+			"massData-I" : 0.02405765838921070,
+			"massData-center" : 
+			{
+				"x" : -1.583667653903831e-005,
+				"y" : -6.560840574820759e-006
+			},
+			"massData-mass" : 0.3417373895645142,
+			"name" : "playerlower",
+			"position" : 
+			{
+				"x" : 1.279839158058167,
+				"y" : 2.483422040939331
+			},
+			"type" : 2
+		},
+		
+		{
+			"angle" : 0,
+			"angularVelocity" : 0,
+			"awake" : true,
+			"fixture" : 
+			[
+				
+				{
+					"density" : 1,
+					"friction" : 0.2000000029802322,
+					"name" : "antenna2",
+					"polygon" : 
+					{
+						"vertices" : 
+						{
+							"x" : 
+							[
+								0.01557314395904541,
+								0.01557314395904541,
+								-0.01557338237762451,
+								-0.01557338237762451
+							],
+							"y" : 
+							[
+								-0.1605185270309448,
+								0.2251464128494263,
+								0.2251464128494263,
+								-0.1605185270309448
+							]
+						}
+					}
+				}
+			],
+			"linearVelocity" : 
+			{
+				"x" : 0,
+				"y" : 0
+			},
+			"massData-I" : 0.0001624017459107563,
+			"massData-center" : 
+			{
+				"x" : -1.190937268802372e-007,
+				"y" : 0.03231394290924072
+			},
+			"massData-mass" : 0.01201212313026190,
+			"name" : "antenna2",
+			"position" : 
+			{
+				"x" : -1.805367946624756,
+				"y" : 1.814880132675171
+			},
+			"type" : 2
+		},
+		
+		{
+			"angle" : 0,
+			"angularVelocity" : 0,
+			"awake" : true,
+			"fixture" : 
+			[
+				
+				{
+					"chain" : 
+					{
+						"vertices" : 
+						{
+							"x" : [ -4.119325637817383, 9.119326591491699 ],
+							"y" : [ 0.06462776660919190, 0.06462776660919190 ]
+						}
+					},
+					"density" : 1,
+					"friction" : 0.2000000029802322,
+					"name" : "playerfoot1"
+				}
+			],
+			"linearVelocity" : 
+			{
+				"x" : 0,
+				"y" : 0
+			},
+			"name" : "ground",
+			"position" : 
+			{
+				"x" : 0.002097775693982840,
+				"y" : 0.0008306311792694032
+			},
+			"type" : 0
+		}
+	],
+	"collisionbitplanes" : 
+	{
+		"names" : 
+		[
+			"bitplane1",
+			"bitplane2",
+			"bitplane3",
+			"bitplane4",
+			"bitplane5",
+			"bitplane6",
+			"bitplane7",
+			"bitplane8",
+			"bitplane9",
+			"bitplane10",
+			"bitplane11",
+			"bitplane12",
+			"bitplane13",
+			"bitplane14",
+			"bitplane15",
+			"bitplane16",
+			"bitplane17",
+			"bitplane18",
+			"bitplane19",
+			"bitplane20",
+			"bitplane21",
+			"bitplane22",
+			"bitplane23",
+			"bitplane24",
+			"bitplane25",
+			"bitplane26",
+			"bitplane27",
+			"bitplane28",
+			"bitplane29",
+			"bitplane30",
+			"bitplane31",
+			"bitplane32"
+		]
+	},
+	"continuousPhysics" : true,
+	"gravity" : 
+	{
+		"x" : 0,
+		"y" : -10.0
+	},
+	"image" : 
+	[
+		
+		{
+			"aspectScale" : 1,
+			"body" : 3,
+			"center" : 
+			{
+				"x" : -0.001794457435607910,
+				"y" : -0.004129886627197266
+			},
+			"corners" : 
+			{
+				"x" : 
+				[
+					-0.5017944574356079,
+					0.4982055425643921,
+					0.4982055425643921,
+					-0.5017944574356079
+				],
+				"y" : 
+				[
+					-0.5041298866271973,
+					-0.5041298866271973,
+					0.4958701133728027,
+					0.4958701133728027
+				]
+			},
+			"file" : "images/carwheel.png",
+			"filter" : 1,
+			"glDrawElements" : [ 0, 1, 2, 2, 3, 0 ],
+			"glTexCoordPointer" : [ 0.0, 0.0, 1.0, 0.0, 1.0, 1.0, 0.0, 1.0 ],
+			"glVertexPointer" : 
+			[
+				-0.5017944574356079,
+				-0.5041298866271973,
+				0.4982055425643921,
+				-0.5041298866271973,
+				0.4982055425643921,
+				0.4958701133728027,
+				-0.5017944574356079,
+				0.4958701133728027
+			],
+			"name" : "rearwheel",
+			"opacity" : 1,
+			"scale" : 1
+		},
+		
+		{
+			"aspectScale" : 1,
+			"body" : 2,
+			"center" : 
+			{
+				"x" : -0.001794457435607910,
+				"y" : -0.004129886627197266
+			},
+			"corners" : 
+			{
+				"x" : 
+				[
+					-0.5017944574356079,
+					0.4982055425643921,
+					0.4982055425643921,
+					-0.5017944574356079
+				],
+				"y" : 
+				[
+					-0.5041298866271973,
+					-0.5041298866271973,
+					0.4958701133728027,
+					0.4958701133728027
+				]
+			},
+			"file" : "images/carwheel.png",
+			"filter" : 1,
+			"glDrawElements" : [ 0, 1, 2, 2, 3, 0 ],
+			"glTexCoordPointer" : [ 0.0, 0.0, 1.0, 0.0, 1.0, 1.0, 0.0, 1.0 ],
+			"glVertexPointer" : 
+			[
+				-0.5017944574356079,
+				-0.5041298866271973,
+				0.4982055425643921,
+				-0.5041298866271973,
+				0.4982055425643921,
+				0.4958701133728027,
+				-0.5017944574356079,
+				0.4958701133728027
+			],
+			"name" : "frontwheel",
+			"opacity" : 1,
+			"scale" : 1
+		},
+		
+		{
+			"aspectScale" : 1,
+			"body" : 1,
+			"center" : 
+			{
+				"x" : 0.01010882854461670,
+				"y" : 0.2893288135528565
+			},
+			"corners" : 
+			{
+				"x" : 
+				[
+					-2.497180938720703,
+					2.517398834228516,
+					2.517398834228516,
+					-2.497180938720703
+				],
+				"y" : 
+				[
+					-0.9643161296844482,
+					-0.9643161296844482,
+					1.542973756790161,
+					1.542973756790161
+				]
+			},
+			"file" : "images/carbody.png",
+			"filter" : 1,
+			"glDrawElements" : [ 0, 1, 2, 2, 3, 0 ],
+			"glTexCoordPointer" : [ 0.0, 0.0, 1.0, 0.0, 1.0, 1.0, 0.0, 1.0 ],
+			"glVertexPointer" : 
+			[
+				-2.497180938720703,
+				-0.9643161296844482,
+				2.517398834228516,
+				-0.9643161296844482,
+				2.517398834228516,
+				1.542973756790161,
+				-2.497180938720703,
+				1.542973756790161
+			],
+			"name" : "carbody",
+			"opacity" : 0.50,
+			"renderOrder" : 1,
+			"scale" : 2.507289886474609
+		}
+	],
+	"joint" : 
+	[
+		
+		{
+			"anchorA" : 
+			{
+				"x" : -0.5752646923065186,
+				"y" : 0.4278329610824585
+			},
+			"anchorB" : 
+			{
+				"x" : -0.0003728866577148438,
+				"y" : 0.08708405494689941
+			},
+			"bodyA" : 4,
+			"bodyB" : 6,
+			"dampingRatio" : 0.6999999880790710,
+			"frequency" : 5.0,
+			"length" : 0.5768910050392151,
+			"name" : "antennaspring2",
+			"type" : "distance"
+		},
+		
+		{
+			"anchorA" : 
+			{
+				"x" : 0,
+				"y" : -0.7027311325073242
+			},
+			"anchorB" : 
+			{
+				"x" : 0,
+				"y" : 0
+			},
+			"bodyA" : 0,
+			"bodyB" : 5,
+			"enableMotor" : false,
+			"localAxisA" : 
+			{
+				"x" : 0,
+				"y" : 1
+			},
+			"maxMotorTorque" : 0,
+			"motorSpeed" : 0,
+			"name" : "playerfoot",
+			"springDampingRatio" : 0.8000000119209290,
+			"springFrequency" : 4.0,
+			"type" : "wheel"
+		},
+		
+		{
+			"anchorA" : 
+			{
+				"x" : 0.0003600120544433594,
+				"y" : 0.1867433786392212
+			},
+			"anchorB" : 
+			{
+				"x" : 0.0001535415649414063,
+				"y" : -0.1545724868774414
+			},
+			"bodyA" : 4,
+			"bodyB" : 6,
+			"enableLimit" : true,
+			"enableMotor" : false,
+			"jointSpeed" : 0,
+			"lowerLimit" : -0.4363323152065277,
+			"maxMotorTorque" : 0,
+			"motorSpeed" : 0,
+			"name" : "antennapivot2",
+			"refAngle" : 0,
+			"type" : "revolute",
+			"upperLimit" : 0.4363323152065277
+		},
+		
+		{
+			"anchorA" : 
+			{
+				"x" : -2.409670114517212,
+				"y" : 0.8091080188751221
+			},
+			"anchorB" : 
+			{
+				"x" : 0.001631259918212891,
+				"y" : 0.1164729595184326
+			},
+			"bodyA" : 1,
+			"bodyB" : 4,
+			"dampingRatio" : 0.6999999880790710,
+			"frequency" : 5.0,
+			"length" : 0.5768910050392151,
+			"name" : "antennaspring1",
+			"type" : "distance"
+		},
+		
+		{
+			"anchorA" : 
+			{
+				"x" : 1.618139982223511,
+				"y" : -0.3086310029029846
+			},
+			"anchorB" : 
+			{
+				"x" : 0.001029968261718750,
+				"y" : 0
+			},
+			"bodyA" : 1,
+			"bodyB" : 2,
+			"enableMotor" : true,
+			"localAxisA" : 
+			{
+				"x" : 0,
+				"y" : 1
+			},
+			"maxMotorTorque" : 1,
+			"motorSpeed" : 0,
+			"name" : "frontwheel",
+			"springDampingRatio" : 0.07500000298023224,
+			"springFrequency" : 4.0,
+			"type" : "wheel"
+		},
+		
+		{
+			"anchorA" : 
+			{
+				"x" : -1.834210038185120,
+				"y" : 0.4997669458389282
+			},
+			"anchorB" : 
+			{
+				"x" : 0.0001915693283081055,
+				"y" : -0.1928684711456299
+			},
+			"bodyA" : 1,
+			"bodyB" : 4,
+			"enableLimit" : true,
+			"enableMotor" : false,
+			"jointSpeed" : 0,
+			"lowerLimit" : -0.4363323152065277,
+			"maxMotorTorque" : 0,
+			"motorSpeed" : 0,
+			"name" : "antennapivot1",
+			"refAngle" : 0,
+			"type" : "revolute",
+			"upperLimit" : 0.4363323152065277
+		},
+		
+		{
+			"anchorA" : 
+			{
+				"x" : -1.310029983520508,
+				"y" : -0.3029899895191193
+			},
+			"anchorB" : 
+			{
+				"x" : -0.000221252441406250,
+				"y" : 0
+			},
+			"bodyA" : 1,
+			"bodyB" : 3,
+			"enableMotor" : true,
+			"localAxisA" : 
+			{
+				"x" : 0,
+				"y" : 1
+			},
+			"maxMotorTorque" : 1,
+			"motorSpeed" : 0,
+			"name" : "rearwheel",
+			"springDampingRatio" : 0.07500000298023224,
+			"springFrequency" : 4.0,
+			"type" : "wheel"
+		}
+	],
+	"positionIterations" : 3,
+	"stepsPerSecond" : 60.0,
+	"subStepping" : false,
+	"velocityIterations" : 8,
+	"warmStarting" : true
+}

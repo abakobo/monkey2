@@ -1,0 +1,251 @@
+
+{
+	"allowSleep" : true,
+	"autoClearForces" : true,
+	"body" : 
+	[
+		
+		{
+			"angle" : 0,
+			"angularVelocity" : 0,
+			"awake" : true,
+			"customProperties" : 
+			[
+				
+				{
+					"int" : 6,
+					"name" : "intProp"
+				},
+				
+				{
+					"name" : "stringProp",
+					"string" : "friend"
+				}
+			],
+			"fixture" : 
+			[
+				
+				{
+					"circle" : 
+					{
+						"center" : 
+						{
+							"x" : 0,
+							"y" : 0
+						},
+						"radius" : 0.50
+					},
+					"density" : 1,
+					"friction" : 0.2000000029802322,
+					"name" : "fixture2"
+				}
+			],
+			"linearVelocity" : 
+			{
+				"x" : 0,
+				"y" : 0
+			},
+			"massData-I" : 0.09817477315664291,
+			"massData-mass" : 0.7853981852531433,
+			"name" : "ball",
+			"position" : 
+			{
+				"x" : 0.01563972048461437,
+				"y" : 3.472018003463745
+			},
+			"type" : 2
+		},
+		
+		{
+			"angle" : 0,
+			"angularVelocity" : 0,
+			"awake" : true,
+			"customProperties" : 
+			[
+				
+				{
+					"int" : 4,
+					"name" : "intProp"
+				},
+				
+				{
+					"int" : 7,
+					"name" : "theint"
+				},
+				
+				{
+					"name" : "stringProp",
+					"string" : "nmy"
+				},
+				
+				{
+					"name" : "thestring",
+					"string" : "seven"
+				},
+				
+				{
+					"bool" : true,
+					"name" : "thebool"
+				},
+				
+				{
+					"float" : 7.699999809265137,
+					"name" : "thefloat"
+				}
+			],
+			"fixture" : 
+			[
+				
+				{
+					"circle" : 
+					{
+						"center" : 
+						{
+							"x" : 0,
+							"y" : 0
+						},
+						"radius" : 0.50
+					},
+					"density" : 1,
+					"friction" : 0.2000000029802322,
+					"name" : "fixture0",
+					"restitution" : 0.8999999761581421
+				}
+			],
+			"linearVelocity" : 
+			{
+				"x" : 0,
+				"y" : 0
+			},
+			"massData-I" : 0.09817477315664291,
+			"massData-mass" : 0.7853981852531433,
+			"name" : "ball",
+			"position" : 
+			{
+				"x" : -0.03174602985382080,
+				"y" : 2.174603223800659
+			},
+			"type" : 2
+		},
+		
+		{
+			"angle" : 0,
+			"angularVelocity" : 0,
+			"awake" : true,
+			"customProperties" : 
+			[
+				
+				{
+					"int" : 8,
+					"name" : "intProp"
+				},
+				
+				{
+					"name" : "stringProp",
+					"string" : "theGround"
+				},
+				
+				{
+					"bool" : true,
+					"name" : "boolProp"
+				},
+				
+				{
+					"float" : 9.899999618530273,
+					"name" : "floatProp"
+				}
+			],
+			"fixture" : 
+			[
+				
+				{
+					"density" : 1,
+					"friction" : 0.2000000029802322,
+					"name" : "fixture1",
+					"polygon" : 
+					{
+						"vertices" : 
+						{
+							"x" : 
+							[
+								7.357142925262451,
+								7.357142925262451,
+								-7.547619342803955,
+								-7.547619342803955
+							],
+							"y" : 
+							[
+								0.1349206566810608,
+								0.5158730149269104,
+								0.5317460298538208,
+								0.1507936716079712
+							]
+						}
+					},
+					"restitution" : 0.8999999761581421
+				}
+			],
+			"linearVelocity" : 
+			{
+				"x" : 0,
+				"y" : 0
+			},
+			"name" : "ground",
+			"position" : 
+			{
+				"x" : 0,
+				"y" : 0
+			},
+			"type" : 0
+		}
+	],
+	"collisionbitplanes" : 
+	{
+		"names" : 
+		[
+			"bitplane1",
+			"bitplane2",
+			"bitplane3",
+			"bitplane4",
+			"bitplane5",
+			"bitplane6",
+			"bitplane7",
+			"bitplane8",
+			"bitplane9",
+			"bitplane10",
+			"bitplane11",
+			"bitplane12",
+			"bitplane13",
+			"bitplane14",
+			"bitplane15",
+			"bitplane16",
+			"bitplane17",
+			"bitplane18",
+			"bitplane19",
+			"bitplane20",
+			"bitplane21",
+			"bitplane22",
+			"bitplane23",
+			"bitplane24",
+			"bitplane25",
+			"bitplane26",
+			"bitplane27",
+			"bitplane28",
+			"bitplane29",
+			"bitplane30",
+			"bitplane31",
+			"bitplane32"
+		]
+	},
+	"continuousPhysics" : true,
+	"gravity" : 
+	{
+		"x" : 0,
+		"y" : -10.0
+	},
+	"positionIterations" : 3,
+	"stepsPerSecond" : 60.0,
+	"subStepping" : false,
+	"velocityIterations" : 8,
+	"warmStarting" : true
+}

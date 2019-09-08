@@ -1,0 +1,8 @@
+{
+	"module":"png2polygon",
+	"about":"Converts a PNG image to a polygon and simplifies it for collision",
+	"author":"gcmartijn",
+	"version":"1.0.0",
+	"support":"http://monkey2.monkey-x.com/forums/topic/module-png2polygon/",
+	"depends":["std"]
+}

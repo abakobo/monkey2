@@ -1,0 +1,8 @@
+{
+	"module":"steamworks",
+	"about":"Steamworks SDK wrapper",
+	"author":"Simon Armstrong",
+	"version":"1.0.3",
+	"support":"http://monkeycoder.co.nz/forums/topic/steamworks-module-2/",
+	"depends":["libc"]
+}
