@@ -62,7 +62,7 @@ Class HtmlView Extends ScrollableView
 		
 		If root="http://" Or root="https://"
 		
-#If __DESKTOP_TARGET__			
+#If __DESKTOP_TARGET__
 			requesters.OpenUrl( url )
 #Endif
 
@@ -125,10 +125,15 @@ Class HtmlView Extends ScrollableView
 		
 		Local clip:litehtml.position
 		
-		clip.x=canvas.Scissor.X
-		clip.y=canvas.Scissor.Y
-		clip.width=canvas.Scissor.Width
-		clip.height=canvas.Scissor.Height
+		'clip.x=canvas.Scissor.X
+		'clip.y=canvas.Scissor.Y
+		'clip.width=canvas.Scissor.Width
+		'clip.height=canvas.Scissor.Height
+        
+		clip.x=VisibleRect.X           ' Draw only visible rect, not the
+		clip.y=VisibleRect.Y           ' whole virtual page.
+		clip.width=VisibleRect.Width   ' *Fixes* slow scrolling with large pages.
+		clip.height=VisibleRect.Height '
 
 		_document.draw( canvas,0,0,Varptr clip )
 	End
