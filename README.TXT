@@ -8,7 +8,7 @@ If you are reading this on github, please note there are prebuilt versions of mo
 
 1) Unless you are using one of the prebuilt releases, you will need to install the mingw-64 compiler. There is a self-extracting archive of mingw-64 that has been tested with monkey2 here:
 
-http://monkeycoder.co.nz/get-file?file=i686-6.2.0-posix-dwarf-rt_v5-rev1.exe
+http://codedan.net/Monkey2/backup/monkeycoder.co.nz/get-file/index-file=i686-6.2.0-posix-dwarf-rt_v5-rev1.exe.html
 
 If you install this to the monkey2 'devtools' directory, the following steps should 'just work' (ha!).
 
