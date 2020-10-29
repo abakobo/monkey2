@@ -10,6 +10,7 @@
 #include "pmutil.h"
 #include "pminternal.h"
 #include <assert.h>
+#include <stdio.h>
 
 #define MIDI_CLOCK      0xf8
 #define MIDI_ACTIVE     0xfe
@@ -45,8 +46,6 @@ int pm_hosterror;
 char pm_hosterror_text[PM_HOST_ERROR_MSG_LEN];
 
 #ifdef PM_CHECK_ERRORS
-
-#include <stdio.h>
 
 #define STRING_MAX 80
 
