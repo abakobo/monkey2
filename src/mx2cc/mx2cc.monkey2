@@ -78,7 +78,7 @@ Function Main()
 	If args.Length<2
 
 		Print ""
-		Print "Mx2cc usage: mx2cc action options sources"
+		Print "Mx2cc usage: MX2CC [action] [options] [source|modules]"
 		Print ""
 		Print "Actions:"
 		print "  makeapp      - make an application."
@@ -95,9 +95,9 @@ Function Main()
 		Print "  -translate   - parse, semant and translate."
 		Print "  -build       - parse, semant, translate and build."
 		Print "  -run         - the works! The default."
-		Print "  -apptype=    - app type to make, one of : gui, console. Defaults to gui."
-		print "  -target=     - build target, one of: windows, macos, linux, emscripten, wasm, android, ios, desktop. Desktop is an alias for current host. Defaults to desktop."
-		Print "  -config=     - build config, one of: debug, release. Defaults to debug."
+		Print "  -apptype=    - app type to make, one of : gui, console. (Defaults: gui)."
+		print "  -target=     - build target, one of: windows, macos, linux, emscripten, wasm, android, ios, desktop. Desktop is an alias for current host. (Defaults: desktop)."
+		Print "  -config=     - build config, one of: debug, release. (Defaults: debug)."
 		Print ""
 		Print "Sources:"
 		Print "  for makeapp  - single monkey2 source file."
@@ -105,7 +105,7 @@ Function Main()
 		Print "  for makedocs - space separated list of modules, or nothing to make all docs."
 
 #If __DESKTOP_TARGET__
-		If Int( GetEnv( "MX2_USE_MSVC" ) )
+		If Int( GetEnv( "MX2_USE_MSVC" ) ) Or GetEnv( "MX2_USE_MSVC" )=""
 			system( "cl > tmp\_v.txt" )		'doesn't work?
 			Print ""
 			Print "Mx2cc using cl version:"
@@ -391,7 +391,7 @@ Function MakeDocs:Bool( args:String[] )
 	page=page.Replace( "${DOCS_TREE}",tree )
 	SaveString( page,"docs/newdocs.html" )
 	
-	Print "~nMakedocs complete."
+	Print "~n[#####] Makedocs complete."
 	
 	Return True
 End
