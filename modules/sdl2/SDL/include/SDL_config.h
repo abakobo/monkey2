@@ -54,6 +54,7 @@
 #include "SDL_config_raspbian.h" //!\\To created
 #else
 #include "SDL_config_linux.h" //!\\To created
+#endif
 #elif defined(EMSCRIPTEN)
 #include "SDL_config_emscripten.h" //!\\ To created
 #else
