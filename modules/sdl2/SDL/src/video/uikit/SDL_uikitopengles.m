@@ -171,6 +171,7 @@ UIKit_GL_CreateContext(_THIS, SDL_Window * window)
              * backing dimensions of the OpenGL view will match the pixel
              * dimensions of the screen rather than the dimensions in points. */
             if ([data.uiwindow.screen respondsToSelector:@selector(nativeScale)]) {
+              //!\\ Mark was here! Always use screen.scale, ignore screen.nativeScale...TO TESTED with 2.0.13 else change? to 'scale = data.uiwindow.screen.scale;'
                 scale = data.uiwindow.screen.nativeScale;
             } else {
                 scale = data.uiwindow.screen.scale;
