@@ -1,6 +1,6 @@
 /*
   Simple DirectMedia Layer
-  Copyright (C) 1997-2018 Sam Lantinga <slouken@libsdl.org>
+  Copyright (C) 1997-2020 Sam Lantinga <slouken@libsdl.org>
 
   This software is provided 'as-is', without any express or implied
   warranty.  In no event will the authors be held liable for any damages
@@ -34,6 +34,8 @@ typedef struct joystick_hwdata
     SDL_bool remote;
 
     GCController __unsafe_unretained *controller;
+	void *rumble;
+    SDL_bool uses_pause_handler;
     int num_pause_presses;
     Uint32 pause_button_down_time;
 
@@ -45,6 +47,9 @@ typedef struct joystick_hwdata
     int naxes;
     int nbuttons;
     int nhats;
+    Uint32 button_mask;
+    SDL_bool has_dualshock_touchpad;
+    SDL_bool has_xbox_paddles;
 
     struct joystick_hwdata *next;
 } joystick_hwdata;

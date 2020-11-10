@@ -1,6 +1,6 @@
 /*
   Simple DirectMedia Layer
-  Copyright (C) 1997-2018 Sam Lantinga <slouken@libsdl.org>
+  Copyright (C) 1997-2020 Sam Lantinga <slouken@libsdl.org>
 
   This software is provided 'as-is', without any express or implied
   warranty.  In no event will the authors be held liable for any damages
@@ -37,9 +37,9 @@
 #include "SDL_opengl.h"
 #endif /* SDL_VIDEO_OPENGL */
 
-#if SDL_VIDEO_OPENGL_ES
+#if SDL_VIDEO_OPENGL_ES && !SDL_VIDEO_OPENGL
 #include "SDL_opengles.h"
-#endif /* SDL_VIDEO_OPENGL_ES */
+#endif /* SDL_VIDEO_OPENGL_ES && !SDL_VIDEO_OPENGL */
 
 /* GL and GLES2 headers conflict on Linux 32 bits */
 #if SDL_VIDEO_OPENGL_ES2 && !SDL_VIDEO_OPENGL
@@ -63,9 +63,6 @@ static VideoBootStrap *bootstrap[] = {
 #endif
 #if SDL_VIDEO_DRIVER_X11
     &X11_bootstrap,
-#endif
-#if SDL_VIDEO_DRIVER_MIR
-    &MIR_bootstrap,
 #endif
 #if SDL_VIDEO_DRIVER_WAYLAND
     &Wayland_bootstrap,
@@ -111,6 +108,13 @@ static VideoBootStrap *bootstrap[] = {
 #endif
 #if SDL_VIDEO_DRIVER_QNX
     &QNX_bootstrap,
+#endif
+#if SDL_VIDEO_DRIVER_OFFSCREEN
+    &OFFSCREEN_bootstrap,
+#endif
+#if SDL_VIDEO_DRIVER_OS2
+    &OS2DIVE_bootstrap,
+    &OS2VMAN_bootstrap,
 #endif
 #if SDL_VIDEO_DRIVER_DUMMY
     &DUMMY_bootstrap,
@@ -493,19 +497,15 @@ SDL_VideoInit(const char *driver_name)
     if (driver_name != NULL) {
         for (i = 0; bootstrap[i]; ++i) {
             if (SDL_strncasecmp(bootstrap[i]->name, driver_name, SDL_strlen(driver_name)) == 0) {
-                if (bootstrap[i]->available()) {
-                    video = bootstrap[i]->create(index);
-                    break;
-                }
+                video = bootstrap[i]->create(index);
+                break;
             }
         }
     } else {
         for (i = 0; bootstrap[i]; ++i) {
-            if (bootstrap[i]->available()) {
-                video = bootstrap[i]->create(index);
-                if (video != NULL) {
-                    break;
-                }
+            video = bootstrap[i]->create(index);
+            if (video != NULL) {
+                break;
             }
         }
     }
@@ -599,11 +599,11 @@ SDL_AddBasicVideoDisplay(const SDL_DisplayMode * desktop_mode)
     }
     display.current_mode = display.desktop_mode;
 
-    return SDL_AddVideoDisplay(&display);
+    return SDL_AddVideoDisplay(&display, SDL_FALSE);
 }
 
 int
-SDL_AddVideoDisplay(const SDL_VideoDisplay * display)
+SDL_AddVideoDisplay(const SDL_VideoDisplay * display, SDL_bool send_event)
 {
     SDL_VideoDisplay *displays;
     int index = -1;
@@ -625,10 +625,29 @@ SDL_AddVideoDisplay(const SDL_VideoDisplay * display)
             SDL_itoa(index, name, 10);
             displays[index].name = SDL_strdup(name);
         }
+
+        if (send_event) {
+            SDL_SendDisplayEvent(&_this->displays[index], SDL_DISPLAYEVENT_CONNECTED, 0);
+        }
     } else {
         SDL_OutOfMemory();
     }
     return index;
+}
+
+void
+SDL_DelVideoDisplay(int index)
+{
+    if (index < 0 || index >= _this->num_displays) {
+        return;
+    }
+
+    SDL_SendDisplayEvent(&_this->displays[index], SDL_DISPLAYEVENT_DISCONNECTED, 0);
+
+    if (index < (_this->num_displays - 1)) {
+        SDL_memmove(&_this->displays[index], &_this->displays[index+1], (_this->num_displays - index - 1)*sizeof(_this->displays[index]));
+    }
+    --_this->num_displays;
 }
 
 int
@@ -662,6 +681,12 @@ SDL_GetDisplayDriverData(int displayIndex)
     CHECK_DISPLAY_INDEX(displayIndex, NULL);
 
     return _this->displays[displayIndex].driverdata;
+}
+
+SDL_bool
+SDL_IsVideoContextExternal(void)
+{
+    return SDL_GetHintBoolean(SDL_HINT_VIDEO_EXTERNAL_CONTEXT, SDL_FALSE);
 }
 
 const char *
@@ -700,12 +725,24 @@ SDL_GetDisplayBounds(int displayIndex, SDL_Rect * rect)
     return 0;  /* !!! FIXME: should this be an error if (rect==NULL) ? */
 }
 
-int SDL_GetDisplayUsableBounds(int displayIndex, SDL_Rect * rect)
+static int
+ParseDisplayUsableBoundsHint(SDL_Rect *rect)
+{
+    const char *hint = SDL_GetHint(SDL_HINT_DISPLAY_USABLE_BOUNDS);
+    return hint && (SDL_sscanf(hint, "%d,%d,%d,%d", &rect->x, &rect->y, &rect->w, &rect->h) == 4);
+}
+
+int
+SDL_GetDisplayUsableBounds(int displayIndex, SDL_Rect * rect)
 {
     CHECK_DISPLAY_INDEX(displayIndex, -1);
 
     if (rect) {
         SDL_VideoDisplay *display = &_this->displays[displayIndex];
+
+        if ((displayIndex == 0) && ParseDisplayUsableBoundsHint(rect)) {
+            return 0;
+        }
 
         if (_this->GetDisplayUsableBounds) {
             if (_this->GetDisplayUsableBounds(_this, display, rect) == 0) {
@@ -1348,7 +1385,7 @@ SDL_UpdateFullscreenMode(SDL_Window * window, SDL_bool fullscreen)
 }
 
 #define CREATE_FLAGS \
-    (SDL_WINDOW_OPENGL | SDL_WINDOW_BORDERLESS | SDL_WINDOW_RESIZABLE | SDL_WINDOW_ALLOW_HIGHDPI | SDL_WINDOW_ALWAYS_ON_TOP | SDL_WINDOW_SKIP_TASKBAR | SDL_WINDOW_POPUP_MENU | SDL_WINDOW_UTILITY | SDL_WINDOW_TOOLTIP | SDL_WINDOW_VULKAN | SDL_WINDOW_MINIMIZED)
+    (SDL_WINDOW_OPENGL | SDL_WINDOW_BORDERLESS | SDL_WINDOW_RESIZABLE | SDL_WINDOW_ALLOW_HIGHDPI | SDL_WINDOW_ALWAYS_ON_TOP | SDL_WINDOW_SKIP_TASKBAR | SDL_WINDOW_POPUP_MENU | SDL_WINDOW_UTILITY | SDL_WINDOW_TOOLTIP | SDL_WINDOW_VULKAN | SDL_WINDOW_MINIMIZED | SDL_WINDOW_METAL)
 
 static SDL_INLINE SDL_bool
 IsAcceptingDragAndDrop(void)
@@ -1411,7 +1448,7 @@ SDL_CreateWindow(const char *title, int x, int y, int w, int h, Uint32 flags)
 
     if (!_this) {
         /* Initialize the video system if needed */
-        if (SDL_VideoInit(NULL) < 0) {
+        if (SDL_Init(SDL_INIT_VIDEO) < 0) {
             return NULL;
         }
     }
@@ -1437,7 +1474,7 @@ SDL_CreateWindow(const char *title, int x, int y, int w, int h, Uint32 flags)
 
     /* Some platforms have OpenGL enabled by default */
 #if (SDL_VIDEO_OPENGL && __MACOSX__) || __IPHONEOS__ || __ANDROID__ || __NACL__
-    if (!_this->is_dummy && !(flags & SDL_WINDOW_VULKAN)) {
+    if (!_this->is_dummy && !(flags & SDL_WINDOW_VULKAN) && !(flags & SDL_WINDOW_METAL) && !SDL_IsVideoContextExternal()) {
         flags |= SDL_WINDOW_OPENGL;
     }
 #endif
@@ -1465,6 +1502,24 @@ SDL_CreateWindow(const char *title, int x, int y, int w, int h, Uint32 flags)
             return NULL;
         }
         if (SDL_Vulkan_LoadLibrary(NULL) < 0) {
+            return NULL;
+        }
+    }
+
+    if (flags & SDL_WINDOW_METAL) {
+        if (!_this->Metal_CreateView) {
+            SDL_SetError("Metal support is either not configured in SDL "
+                         "or not available in current SDL video driver "
+                         "(%s) or platform", _this->name);
+            return NULL;
+        }
+        if (flags & SDL_WINDOW_OPENGL) {
+            SDL_SetError("Metal and OpenGL not supported on same window");
+            return NULL;
+        }
+        if (flags & SDL_WINDOW_VULKAN) {
+            SDL_SetError("Metal and Vulkan not supported on same window. "
+                         "To use MoltenVK, set SDL_WINDOW_VULKAN only.");
             return NULL;
         }
     }
@@ -1639,6 +1694,7 @@ SDL_RecreateWindow(SDL_Window * window, Uint32 flags)
         window->surface->flags &= ~SDL_DONTFREE;
         SDL_FreeSurface(window->surface);
         window->surface = NULL;
+        window->surface_valid = SDL_FALSE;
     }
     if (_this->DestroyWindowFramebuffer) {
         _this->DestroyWindowFramebuffer(_this, window);
@@ -1656,6 +1712,12 @@ SDL_RecreateWindow(SDL_Window * window, Uint32 flags)
         } else {
             SDL_GL_UnloadLibrary();
         }
+    } else if (window->flags & SDL_WINDOW_OPENGL) {
+        SDL_GL_UnloadLibrary();
+        if (SDL_GL_LoadLibrary(NULL) < 0) {
+            return -1;
+        }
+        loaded_opengl = SDL_TRUE;
     }
 
     if ((window->flags & SDL_WINDOW_VULKAN) != (flags & SDL_WINDOW_VULKAN)) {
@@ -1663,8 +1725,25 @@ SDL_RecreateWindow(SDL_Window * window, Uint32 flags)
         return -1;
     }
 
+    /*
+    if ((window->flags & SDL_WINDOW_METAL) != (flags & SDL_WINDOW_METAL)) {
+        SDL_SetError("Can't change SDL_WINDOW_METAL window flag");
+        return -1;
+    }
+    */
+
     if ((window->flags & SDL_WINDOW_VULKAN) && (flags & SDL_WINDOW_OPENGL)) {
         SDL_SetError("Vulkan and OpenGL not supported on same window");
+        return -1;
+    }
+
+    if ((window->flags & SDL_WINDOW_METAL) && (flags & SDL_WINDOW_OPENGL)) {
+        SDL_SetError("Metal and OpenGL not supported on same window");
+        return -1;
+    }
+
+    if ((window->flags & SDL_WINDOW_METAL) && (flags & SDL_WINDOW_VULKAN)) {
+        SDL_SetError("Metal and Vulkan not supported on same window");
         return -1;
     }
 
@@ -1897,7 +1976,6 @@ SDL_SetWindowPosition(SDL_Window * window, int x, int y)
         if (_this->SetWindowPosition) {
             _this->SetWindowPosition(_this, window);
         }
-        SDL_SendWindowEvent(window, SDL_WINDOWEVENT_MOVED, x, y);
     }
 }
 
@@ -2074,8 +2152,8 @@ SDL_SetWindowMinimumSize(SDL_Window * window, int min_w, int min_h)
         return;
     }
 
-    if ((window->max_w && min_w >= window->max_w) ||
-        (window->max_h && min_h >= window->max_h)) {
+    if ((window->max_w && min_w > window->max_w) ||
+        (window->max_h && min_h > window->max_h)) {
         SDL_SetError("SDL_SetWindowMinimumSize(): Tried to set minimum size larger than maximum size");
         return;
     }
@@ -2117,7 +2195,7 @@ SDL_SetWindowMaximumSize(SDL_Window * window, int max_w, int max_h)
         return;
     }
 
-    if (max_w <= window->min_w || max_h <= window->min_h) {
+    if (max_w < window->min_w || max_h < window->min_h) {
         SDL_SetError("SDL_SetWindowMaximumSize(): Tried to set maximum size smaller than minimum size");
         return;
     }
@@ -2209,12 +2287,25 @@ SDL_MaximizeWindow(SDL_Window * window)
     }
 }
 
+static SDL_bool
+CanMinimizeWindow(SDL_Window * window)
+{
+    if (!_this->MinimizeWindow) {
+        return SDL_FALSE;
+    }
+    return SDL_TRUE;
+}
+
 void
 SDL_MinimizeWindow(SDL_Window * window)
 {
     CHECK_WINDOW_MAGIC(window,);
 
     if (window->flags & SDL_WINDOW_MINIMIZED) {
+        return;
+    }
+
+    if (!CanMinimizeWindow(window)) {
         return;
     }
 
@@ -2282,6 +2373,10 @@ SDL_CreateWindowFramebuffer(SDL_Window * window)
         return NULL;
     }
 
+    if (window->surface) {
+        return window->surface;
+    }
+
     if (!SDL_PixelFormatEnumToMasks(format, &bpp, &Rmask, &Gmask, &Bmask, &Amask)) {
         return NULL;
     }
@@ -2298,6 +2393,7 @@ SDL_GetWindowSurface(SDL_Window * window)
         if (window->surface) {
             window->surface->flags &= ~SDL_DONTFREE;
             SDL_FreeSurface(window->surface);
+            window->surface = NULL;
         }
         window->surface = SDL_CreateWindowFramebuffer(window);
         if (window->surface) {
@@ -2648,7 +2744,16 @@ ShouldMinimizeOnFocusLoss(SDL_Window * window)
     }
 #endif
 
-    return SDL_GetHintBoolean(SDL_HINT_VIDEO_MINIMIZE_ON_FOCUS_LOSS, SDL_TRUE);
+#ifdef __ANDROID__
+    {
+        extern SDL_bool Android_JNI_ShouldMinimizeOnFocusLoss(void);
+        if (! Android_JNI_ShouldMinimizeOnFocusLoss()) {
+            return SDL_FALSE;
+        }
+    }
+#endif
+
+    return SDL_GetHintBoolean(SDL_HINT_VIDEO_MINIMIZE_ON_FOCUS_LOSS, SDL_FALSE);
 }
 
 void
@@ -2713,6 +2818,8 @@ SDL_DestroyWindow(SDL_Window * window)
     if (window->surface) {
         window->surface->flags &= ~SDL_DONTFREE;
         SDL_FreeSurface(window->surface);
+        window->surface = NULL;
+        window->surface_valid = SDL_FALSE;
     }
     if (_this->DestroyWindowFramebuffer) {
         _this->DestroyWindowFramebuffer(_this, window);
@@ -3065,24 +3172,24 @@ SDL_GL_ResetAttributes()
     _this->gl_config.retained_backing = 1;
     _this->gl_config.accelerated = -1;  /* accelerated or not, both are fine */
 
+#if SDL_VIDEO_OPENGL
+    _this->gl_config.major_version = 2;
+    _this->gl_config.minor_version = 1;
+    _this->gl_config.profile_mask = 0;
+#elif SDL_VIDEO_OPENGL_ES2
+    _this->gl_config.major_version = 2;
+    _this->gl_config.minor_version = 0;
+    _this->gl_config.profile_mask = SDL_GL_CONTEXT_PROFILE_ES;
+#elif SDL_VIDEO_OPENGL_ES
+    _this->gl_config.major_version = 1;
+    _this->gl_config.minor_version = 1;
+    _this->gl_config.profile_mask = SDL_GL_CONTEXT_PROFILE_ES;
+#endif
+
     if (_this->GL_DefaultProfileConfig) {
         _this->GL_DefaultProfileConfig(_this, &_this->gl_config.profile_mask,
                                        &_this->gl_config.major_version,
                                        &_this->gl_config.minor_version);
-    } else {
-#if SDL_VIDEO_OPENGL
-        _this->gl_config.major_version = 2;
-        _this->gl_config.minor_version = 1;
-        _this->gl_config.profile_mask = 0;
-#elif SDL_VIDEO_OPENGL_ES2
-        _this->gl_config.major_version = 2;
-        _this->gl_config.minor_version = 0;
-        _this->gl_config.profile_mask = SDL_GL_CONTEXT_PROFILE_ES;
-#elif SDL_VIDEO_OPENGL_ES
-        _this->gl_config.major_version = 1;
-        _this->gl_config.minor_version = 1;
-        _this->gl_config.profile_mask = SDL_GL_CONTEXT_PROFILE_ES;
-#endif
     }
 
     _this->gl_config.flags = 0;
@@ -3500,12 +3607,14 @@ SDL_GL_MakeCurrent(SDL_Window * window, SDL_GLContext ctx)
 
     if (!ctx) {
         window = NULL;
-    } else {
+    } else if (window) {
         CHECK_WINDOW_MAGIC(window, -1);
 
         if (!(window->flags & SDL_WINDOW_OPENGL)) {
             return SDL_SetError("The specified window isn't an OpenGL window");
         }
+    } else if (!_this->gl_allow_no_surface) {
+        return SDL_SetError("Use of OpenGL without a window is not supported on this platform");
     }
 
     retval = _this->GL_MakeCurrent(_this, window, ctx);
@@ -3818,9 +3927,14 @@ SDL_IsScreenKeyboardShown(SDL_Window *window)
 #if SDL_VIDEO_DRIVER_X11
 #include "x11/SDL_x11messagebox.h"
 #endif
+#if SDL_VIDEO_DRIVER_HAIKU
+#include "haiku/SDL_bmessagebox.h"
+#endif
+#if SDL_VIDEO_DRIVER_OS2
+#include "os2/SDL_os2messagebox.h"
+#endif
 
-
-#if SDL_VIDEO_DRIVER_WINDOWS || SDL_VIDEO_DRIVER_WINRT || SDL_VIDEO_DRIVER_COCOA || SDL_VIDEO_DRIVER_UIKIT || SDL_VIDEO_DRIVER_X11
+#if SDL_VIDEO_DRIVER_WINDOWS || SDL_VIDEO_DRIVER_WINRT || SDL_VIDEO_DRIVER_COCOA || SDL_VIDEO_DRIVER_UIKIT || SDL_VIDEO_DRIVER_X11 || SDL_VIDEO_DRIVER_HAIKU || SDL_VIDEO_DRIVER_OS2
 static SDL_bool SDL_MessageboxValidForDriver(const SDL_MessageBoxData *messageboxdata, SDL_SYSWM_TYPE drivertype)
 {
     SDL_SysWMinfo info;
@@ -3910,6 +4024,20 @@ SDL_ShowMessageBox(const SDL_MessageBoxData *messageboxdata, int *buttonid)
     if (retval == -1 &&
         SDL_MessageboxValidForDriver(messageboxdata, SDL_SYSWM_X11) &&
         X11_ShowMessageBox(messageboxdata, buttonid) == 0) {
+        retval = 0;
+    }
+#endif
+#if SDL_VIDEO_DRIVER_HAIKU
+    if (retval == -1 &&
+        SDL_MessageboxValidForDriver(messageboxdata, SDL_SYSWM_HAIKU) &&
+        HAIKU_ShowMessageBox(messageboxdata, buttonid) == 0) {
+        retval = 0;
+    }
+#endif
+#if SDL_VIDEO_DRIVER_OS2
+    if (retval == -1 &&
+        SDL_MessageboxValidForDriver(messageboxdata, SDL_SYSWM_OS2) &&
+        OS2_ShowMessageBox(messageboxdata, buttonid) == 0) {
         retval = 0;
     }
 #endif
@@ -4153,6 +4281,59 @@ void SDL_Vulkan_GetDrawableSize(SDL_Window * window, int *w, int *h)
 
     if (_this->Vulkan_GetDrawableSize) {
         _this->Vulkan_GetDrawableSize(_this, window, w, h);
+    } else {
+        SDL_GetWindowSize(window, w, h);
+    }
+}
+
+SDL_MetalView
+SDL_Metal_CreateView(SDL_Window * window)
+{
+    CHECK_WINDOW_MAGIC(window, NULL);
+
+    if (!(window->flags & SDL_WINDOW_METAL)) {
+        SDL_SetError("The specified window isn't a Metal window");
+        return NULL;
+    }
+
+    if (_this->Metal_CreateView) {
+        return _this->Metal_CreateView(_this, window);
+    } else {
+        SDL_SetError("Metal is not supported.");
+        return NULL;
+    }
+}
+
+void
+SDL_Metal_DestroyView(SDL_MetalView view)
+{
+    if (_this && view && _this->Metal_DestroyView) {
+        _this->Metal_DestroyView(_this, view);
+    }
+}
+
+void *
+SDL_Metal_GetLayer(SDL_MetalView view)
+{
+    if (_this && _this->Metal_GetLayer) {
+        if (view) {
+            return _this->Metal_GetLayer(_this, view);
+        } else {
+            SDL_InvalidParamError("view");
+            return NULL;
+        }
+    } else {
+        SDL_SetError("Metal is not supported.");
+        return NULL;
+    }
+}
+
+void SDL_Metal_GetDrawableSize(SDL_Window * window, int *w, int *h)
+{
+    CHECK_WINDOW_MAGIC(window,);
+
+    if (_this->Metal_GetDrawableSize) {
+        _this->Metal_GetDrawableSize(_this, window, w, h);
     } else {
         SDL_GetWindowSize(window, w, h);
     }
